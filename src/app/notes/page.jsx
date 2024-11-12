@@ -1,8 +1,19 @@
-import { createBrowserClient } from "@/utils/supabase/client";
+import Form from "../components/Form";
+
+import { supabase } from "../utils/settings";
 
 export default async function Notes() {
-    const supabase = await createClient();
-    const { data: notes } = await supabase.from("notes").select();
+    const { data } = await supabase.from("notes").select();
+    console.log(data);
 
-    return <pre>{JSON.stringify(notes, null, 2)}</pre>;
+    return (
+        <>
+            <Form />
+            {data.map((note, i) => (
+                <div key={i}>
+                    <p>{note.title}</p>
+                </div>
+            ))}
+        </>
+    );
 }
