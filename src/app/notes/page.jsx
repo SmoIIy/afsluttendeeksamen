@@ -1,3 +1,4 @@
+import Example from "../components/Example";
 import Form from "../components/Form";
 
 import { supabase } from "../utils/settings";
@@ -9,6 +10,7 @@ export default async function Notes() {
     return (
         <>
             <Form />
+            <Example className="text-blue-500">Test</Example>
             {data.map((note, i) => (
                 <div key={i}>
                     <p>{note.title}</p>
