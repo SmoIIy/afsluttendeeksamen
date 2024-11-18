@@ -1,7 +1,7 @@
 import Example from "../components/Example";
 import Form from "../components/Form";
 
-import { supabase } from "../utils/supabase/settings";
+import { supabase } from "/src/utils/supabase/settings";
 
 export default async function Notes() {
     const { data } = await supabase.from("notes").select();
