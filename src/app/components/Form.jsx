@@ -1,4 +1,4 @@
-import { supabase } from "../utils/settings";
+import { supabase } from "../utils/supabase/settings";
 
 export default async function Form() {
     return (
