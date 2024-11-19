@@ -8,7 +8,7 @@ export default async function Notes() {
     console.log(data);
 
     return (
-        <>
+        <div className="flex flex-col justify-center items-center">
             <Form />
             <Example className="text-blue-500">Test</Example>
             {data.map((note, i) => (
@@ -16,6 +16,6 @@ export default async function Notes() {
                     <p>{note.title}</p>
                 </div>
             ))}
-        </>
+        </div>
     );
 }
