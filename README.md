@@ -11,3 +11,7 @@ I forhold til tech stack, er vi gået efter marked conventioner samt familiarite
 ### Tailwind CSS
 
 ### Supabase
+
+#### Formik
+
+#### Yup
