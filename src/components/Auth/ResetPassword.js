@@ -49,7 +49,7 @@ const ResetPassword = () => {
               type="email"
             />
             {errors.email && touched.email ? (
-              <div className="text-red-600">{errors.email}</div>
+              <div className="text-utility-warning">{errors.email}</div>
             ) : null}
             <button className="button-inverse w-full" type="submit">
               Send Instructions
@@ -57,8 +57,8 @@ const ResetPassword = () => {
           </Form>
         )}
       </Formik>
-      {errorMsg && <div className="text-center text-red-600">{errorMsg}</div>}
-      {successMsg && <div className="text-center text-black">{successMsg}</div>}
+      {errorMsg && <div className="text-utility-warning text-center">{errorMsg}</div>}
+      {successMsg && <div className="text-dark-800 text-center">{successMsg}</div>}
       <Link href="/sign-in" className="link">
         Remember your password? Sign In.
       </Link>

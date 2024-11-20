@@ -53,7 +53,7 @@ const SignUp = () => {
               type="email"
             />
             {errors.email && touched.email ? (
-              <div className="text-red-600">{errors.email}</div>
+              <div className="text-utility-warning">{errors.email}</div>
             ) : null}
 
             <label htmlFor="email">Password</label>
@@ -64,7 +64,7 @@ const SignUp = () => {
               type="password"
             />
             {errors.password && touched.password ? (
-              <div className="text-red-600">{errors.password}</div>
+              <div className="text-utility-warning">{errors.password}</div>
             ) : null}
 
             <button className="button-inverse w-full" type="submit">
@@ -73,8 +73,8 @@ const SignUp = () => {
           </Form>
         )}
       </Formik>
-      {errorMsg && <div className="text-red-600">{errorMsg}</div>}
-      {successMsg && <div className="text-black">{successMsg}</div>}
+      {errorMsg && <div className="text-utility-warning">{errorMsg}</div>}
+      {successMsg && <div className="text-dark-800">{successMsg}</div>}
       <Link href="/sign-in" className="link w-full">
         Already have an account? Sign In.
       </Link>

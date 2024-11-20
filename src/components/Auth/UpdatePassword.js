@@ -49,7 +49,7 @@ const UpdatePassword = () => {
               type="password"
             />
             {errors.password && touched.password ? (
-              <div className="text-red-600">{errors.password}</div>
+              <div className="text-utility-warning">{errors.password}</div>
             ) : null}
             <button className="button-inverse w-full" type="submit">
               Update Password
@@ -57,7 +57,7 @@ const UpdatePassword = () => {
           </Form>
         )}
       </Formik>
-      {errorMsg && <div className="text-red-600">{errorMsg}</div>}
+      {errorMsg && <div className="text-utility-warning">{errorMsg}</div>}
     </div>
   );
 };
