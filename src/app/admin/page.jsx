@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
-import SignOut from 'src/components/SignOut';
+import SignOut from 'src/app/admin/components/SignOut';
 
 export default async function Profile() {
   const supabase = createServerComponentClient({ cookies });
@@ -13,15 +13,16 @@ export default async function Profile() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    redirect('/sign-in');
+    redirect('/admin/sign-in');
   }
 
   return (
     <div className="card">
+      {!user && <p>Not logged in</p>}
       <h2>User Profile</h2>
-      <code className="highlight">{user.email}</code>
+      {/* <code className="highlight">{user.email}</code> */}
       <div className="heading">Last Signed In:</div>
-      <code className="highlight">{new Date(user.last_sign_in_at).toUTCString()}</code>
+      {/* <code className="highlight">{new Date(user.last_sign_in_at).toUTCString()}</code> */}
       <Link className="button" href="/">
         Go Home
       </Link>
