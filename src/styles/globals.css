@@ -4,19 +4,19 @@
 
 @layer base {
   h2 {
-    @apply text-dark-50 py-4 text-4xl font-black;
+    @apply py-4 text-4xl font-black text-dark-50;
   }
 
   .button {
-    @apply custom-focus bg-cream-50 hover:text-cream-50 focus:text-cream-50 rounded-full border-2 border-green-400 px-8 py-2 font-bold text-green-400 hover:bg-green-400 focus:bg-green-400;
+    @apply custom-focus rounded-full border-2 border-green-400 bg-cream-50 px-8 py-2 font-bold text-green-400 hover:bg-green-400 hover:text-cream-50 focus:bg-green-400 focus:text-cream-50;
   }
 
   .button-inverse {
-    @apply custom-focus hover:bg-cream-50 border-cream-50 text-cream-50 focus:bg-cream-400 rounded-full border-2 bg-green-400 px-8 py-2 font-bold hover:border-green-400 hover:text-green-400 focus:border-green-400 focus:text-green-400;
+    @apply custom-focus rounded-full border-2 border-cream-50 bg-green-400 px-8 py-2 font-bold text-cream-50 hover:border-green-400 hover:bg-cream-50 hover:text-green-400 focus:border-green-400 focus:bg-cream-400 focus:text-green-400;
   }
 
   .card {
-    @apply column bg-cream-400 min-w-[20rem] items-center gap-8 rounded-2xl px-4 py-8 shadow-md sm:min-w-[24rem] sm:px-10;
+    @apply column min-w-[20rem] items-center gap-8 rounded-2xl bg-cream-400 px-4 py-8 shadow-md sm:min-w-[24rem] sm:px-10;
   }
 
   .column {
@@ -28,11 +28,11 @@
   }
 
   .heading {
-    @apply text-dark-700 text-lg font-semibold;
+    @apply text-lg font-semibold text-dark-700;
   }
 
   .highlight {
-    @apply bg-dark-50 ml-1 rounded-lg p-2 font-mono;
+    @apply ml-1 rounded-lg bg-dark-50 p-2 font-mono;
   }
 
   .error {
@@ -40,7 +40,11 @@
   }
 
   .input {
-    @apply custom-focus border-dark-300 w-full rounded-xl border focus:shadow-none;
+    @apply custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
+  }
+
+  .label {
+    @apply text-cream-50;
   }
 
   .link {

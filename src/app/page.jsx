@@ -5,6 +5,8 @@ import { redirect } from 'next/navigation';
 
 import SignOut from 'src/app/admin/components/SignOut';
 
+import Form from './components/Form';
+
 export default async function Home() {
   //   const supabase = createServerComponentClient({ cookies });
 
@@ -24,6 +26,7 @@ export default async function Home() {
         Go to Profile
       </Link>
       {/* <SignOut /> */}
+      <Form />
     </div>
   );
 }
