@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
-import SignOut from 'src/components/SignOut';
+import SignOut from 'src/app/admin/components/SignOut';
 
 export default async function Profile() {
   const supabase = createServerComponentClient({ cookies });

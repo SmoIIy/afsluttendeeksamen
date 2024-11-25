@@ -25,7 +25,7 @@ const UpdatePassword = () => {
       setErrorMsg(error.message);
     } else {
       // Go to Home page
-      router.replace('/');
+      router.replace('/admin');
     }
   }
 
