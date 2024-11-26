@@ -1,63 +1,61 @@
-import { supabase } from "../utils/supabase/settings";
+"use client";
 
-async function handleForm(formdata) {
-	"use server";
+import handleForm from "../utils/actions/handleform";
 
-	const formData = [
-		{
-			date: "2017-06-01",
-			firstname: "Janus",
-			lastname: "Bardrum",
-			email: "test@test.dk",
-		},
-	];
-
-	const { data, error } = await supabase
-		.from("test")
-		.insert(formData)
-		.select();
-
-	if (error) {
-		console.log(error);
-	} else {
-		console.log(data);
-	}
-}
-
-export default async function customerForm() {
+export default function customerForm() {
 	return (
 		<form action={handleForm}>
 			<div>
 				<label className="label" htmlFor="firstname">
-					Fornavn
+					Fornavn *
 				</label>
 				<input
 					className="input"
 					type="text"
 					name="firstname"
 					id="firstname"
+					required
 				/>
 			</div>
 			<div>
 				<label className="label" htmlFor="lastname">
-					Efternavn
+					Efternavn *
 				</label>
 				<input
 					className="input"
 					type="text"
 					name="lastname"
 					id="lastname"
+					required
+				/>
+			</div>
+			<div>
+				<label className="label" htmlFor="phone">
+					Phone *
+				</label>
+				<input
+					className="input"
+					type="tel"
+					name="phone"
+					id="phone"
+					required
 				/>
 			</div>
 			<div>
 				<label className="label" htmlFor="email">
-					Email
+					Email *
 				</label>
-				<input className="input" type="email" name="email" id="email" />
+				<input
+					className="input"
+					type="email"
+					name="email"
+					id="email"
+					required
+				/>
 			</div>
 			<div>
 				<label className="label" htmlFor="date">
-					Dato
+					Dato *
 				</label>
 				<input className="input" type="date" name="date" id="date" />
 			</div>
