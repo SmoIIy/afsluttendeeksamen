@@ -5,10 +5,11 @@ import { supabase } from "../supabase/settings";
 export default async function handleForm(formdata) {
 	const formData = [
 		{
-			date: "2017-06-01",
-			firstname: "Janus",
-			lastname: "Bardrum",
-			email: "test@test.dk",
+			date: formdata.get("date"),
+			firstname: formdata.get("firstname"),
+			lastname: formdata.get("lastname"),
+			email: formdata.get("email"),
+			phone: formdata.get("phone"),
 		},
 	];
 

@@ -6,7 +6,7 @@ export default function NewDate({ data }) {
 				{data.firstname} {data.lastname}
 			</p>
 			<p>{data.email}</p>
-			<p>phone</p>
+			<p>{data.phone}</p>
 		</div>
 	);
 }
