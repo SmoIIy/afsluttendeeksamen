@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Button from "./components/Button";
-
+import Footer from "./components/Footer";
 import Form from "./components/Form";
 
 export default async function Home() {
 	return (
-		<div className="card bg-dark-700">
+		<div className=" bg-dark-700">
 			<Button className="button-primary" body="Button" anchor="/" />
 			<Button className="button-secondary" body="Button" anchor="/" />
 
@@ -16,6 +16,7 @@ export default async function Home() {
 			</Link>
 			{/* <SignOut /> */}
 			<Form />
+			<Footer />
 		</div>
 	);
 }
