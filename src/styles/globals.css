@@ -3,55 +3,55 @@
 @tailwind utilities;
 
 @layer base {
-  h2 {
-    @apply py-4 text-4xl font-black text-dark-50;
-  }
+	h2 {
+		@apply py-4 text-4xl font-black text-dark-50;
+	}
 
-  .button {
-    @apply custom-focus rounded-full border-2 border-green-400 bg-cream-50 px-8 py-2 font-bold text-green-400 hover:bg-green-400 hover:text-cream-50 focus:bg-green-400 focus:text-cream-50;
-  }
+	.button-primary {
+		@apply custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500;
+	}
 
-  .button-inverse {
-    @apply custom-focus rounded-full border-2 border-cream-50 bg-green-400 px-8 py-2 font-bold text-cream-50 hover:border-green-400 hover:bg-cream-50 hover:text-green-400 focus:border-green-400 focus:bg-cream-400 focus:text-green-400;
-  }
+	.button-secondary {
+		@apply custom-focus border-4 border-purple-400 bg-transparent px-8 py-1 font-bold text-purple-400 hover:text-dark-400 hover:bg-purple-200 hover:border-purple-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-purple-500 active:border-purple-500;
+	}
 
-  .card {
-    @apply column min-w-[20rem] items-center gap-8 rounded-2xl bg-cream-400 px-4 py-8 shadow-md sm:min-w-[24rem] sm:px-10;
-  }
+	.card {
+		@apply column min-w-[20rem] items-center gap-8 rounded-2xl bg-cream-400 px-4 py-8 shadow-md sm:min-w-[24rem] sm:px-10;
+	}
 
-  .column {
-    @apply flex flex-col items-start justify-center gap-4;
-  }
+	.column {
+		@apply flex flex-col items-start justify-center gap-4;
+	}
 
-  .custom-focus {
-    @apply focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2;
-  }
+	.custom-focus {
+		@apply focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:ring-offset-1;
+	}
 
-  .heading {
-    @apply text-lg font-semibold text-dark-700;
-  }
+	.heading {
+		@apply text-lg font-semibold text-dark-700;
+	}
 
-  .highlight {
-    @apply ml-1 rounded-lg bg-dark-50 p-2 font-mono;
-  }
+	.highlight {
+		@apply ml-1 rounded-lg bg-dark-50 p-2 font-mono;
+	}
 
-  .error {
-    @apply w-full text-center text-purple-400;
-  }
+	.error {
+		@apply w-full text-center text-purple-400;
+	}
 
-  .input {
-    @apply custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
-  }
+	.input {
+		@apply custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
+	}
 
-  .label {
-    @apply text-cream-50;
-  }
+	.label {
+		@apply text-cream-50;
+	}
 
-  .link {
-    @apply custom-focus rounded-md font-semibold text-green-400;
-  }
+	.link {
+		@apply custom-focus rounded-md font-semibold text-green-400;
+	}
 
-  .row {
-    @apply flex flex-row items-center justify-start gap-1;
-  }
+	.row {
+		@apply flex flex-row items-center justify-start gap-1;
+	}
 }
