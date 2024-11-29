@@ -25,3 +25,5 @@ Vi har også benyttet nogle mindre libraries til små utilities, som vi har beny
 #### Formik
 
 #### Yup
+
+#### React Query

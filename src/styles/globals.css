@@ -8,11 +8,11 @@
 	}
 
 	.button-primary {
-		@apply custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500;
+		@apply custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500 cursor-pointer;
 	}
 
 	.button-secondary {
-		@apply custom-focus border-4 border-purple-400 bg-transparent px-8 py-1 font-bold text-purple-400 hover:text-dark-400 hover:bg-purple-200 hover:border-purple-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-purple-500 active:border-purple-500;
+		@apply custom-focus border-4 border-purple-400 bg-transparent px-8 py-1 font-bold text-purple-400 hover:text-dark-400 hover:bg-purple-200 hover:border-purple-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-purple-500 active:border-purple-500 cursor-pointer;
 	}
 
 	.card {

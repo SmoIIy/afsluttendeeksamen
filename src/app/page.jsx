@@ -5,7 +5,7 @@ import Form from "./components/Form";
 
 export default async function Home() {
 	return (
-		<div className=" bg-dark-700">
+		<div className="max-w-screen-lg bg-dark-400">
 			<Button className="button-primary" body="Button" anchor="/" />
 			<Button className="button-secondary" body="Button" anchor="/" />
 

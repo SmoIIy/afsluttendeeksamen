@@ -59,7 +59,7 @@ export default function customerForm() {
 				</label>
 				<input className="input" type="date" name="date" id="date" />
 			</div>
-			<input className="button" type="submit" value="Send" />
+			<input className="button-primary" type="submit" value="Send" />
 		</form>
 	);
 }
