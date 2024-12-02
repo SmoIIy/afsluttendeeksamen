@@ -1,9 +1,10 @@
 import cn from "classnames";
+import Link from "next/link";
 
-export default async function Button({ anchor, body, className }) {
+export default function Button({ anchor, body, className }) {
 	return (
-		<a className={cn(className, "")} href={anchor}>
+		<Link className={cn(className, "")} href={anchor}>
 			{body}
-		</a>
+		</Link>
 	);
 }

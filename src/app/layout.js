@@ -1,27 +1,27 @@
-// import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-// import { cookies } from 'next/headers';
+import "src/styles/globals.css";
+import { Inter, Syne } from "next/font/google";
 
-// import AuthProvider from 'src/app/admin/components/AuthProvider';
+const inter = Inter({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-inter",
+});
 
-import 'src/styles/globals.css';
+const syne = Syne({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-syne",
+});
+
+export const metadata = {
+	description: "The React Framework for the Web",
+	title: "Velkommen til DJ Per",
+};
 
 export default async function RootLayout({ children }) {
-  //   const supabase = createServerComponentClient({ cookies });
-
-  //   const {
-  //     data: { session },
-  //   } = await supabase.auth.getSession();
-
-  return (
-    <html lang="en">
-      <body className="bg-dark-400">
-        {/* <div className="flex min-h-screen flex-col items-center justify-center py-2">
-          <main className="flex w-full flex-1 shrink-0 flex-col items-center justify-center px-8 text-center sm:px-20">
-            <AuthProvider accessToken={session?.access_token}>{children}</AuthProvider>
-          </main>
-        </div> */}
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className={`${inter.variable} ${syne.variable}`}>
+			<body className="bg-dark-400">{children}</body>
+		</html>
+	);
 }

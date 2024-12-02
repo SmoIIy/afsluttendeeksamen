@@ -1,25 +1,27 @@
 import Image from "next/image";
 
+import Link from "next/link";
+
 export default async function Footer() {
 	return (
-		<footer className="max-w-full text-cream-400 flex justify-between border-t-2 border-t-cream-400 px-10 py-4 mx-4 md:mx-16">
+		<footer className="max-w-7xl  text-cream-400 flex justify-between border-t-2 border-t-cream-400 px-10 py-4 mx-auto md:mx-auto font-light sticky top-[100vh]">
 			<div className="">
 				<ul className="flex md:flex-row flex-col md:gap-14 gap-6">
 					<li>
-						<a href="/">Forside</a>
+						<Link href="/">Forside</Link>
 					</li>
 					<li>
-						<a href="/booking">Booking</a>
+						<Link href="/booking">Booking</Link>
 					</li>
 					<li>
-						<a href="/kontakt">Kontakt</a>
+						<Link href="/kontakt">Kontakt</Link>
 					</li>
 				</ul>
 			</div>
 			<div className="">
 				<ul className="flex md:flex-row flex-col md:gap-14 gap-6">
 					<li>
-						<a href="facebook.com">
+						<a href="facebook.com" target="_blank">
 							<Image
 								src="/facebook.svg"
 								width={25}
@@ -29,7 +31,7 @@ export default async function Footer() {
 						</a>
 					</li>
 					<li>
-						<a href="instagram.com">
+						<a href="instagram.com" target="_blank">
 							<Image
 								src="/insta.svg"
 								width={25}
@@ -39,7 +41,7 @@ export default async function Footer() {
 						</a>
 					</li>
 					<li>
-						<a href="spotify.com">
+						<a href="spotify.com" target="_blank">
 							<Image
 								src="/spotify.svg"
 								width={25}

@@ -32,7 +32,7 @@
 	}
 
 	.highlight {
-		@apply ml-1 rounded-lg bg-dark-50 p-2 font-mono;
+		@apply ml-1 rounded-lg bg-dark-50 p-2;
 	}
 
 	.error {

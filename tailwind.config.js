@@ -4,7 +4,7 @@ const forms = require("@tailwindcss/forms");
 module.exports = {
 	content: ["./src/**/*.{js,ts,jsx,tsx}"],
 	darkMode: "media",
-	plugins: [forms],
+	plugins: [forms, require("@tailwindcss/typography")],
 	theme: {
 		colors: {
 			utility: {
@@ -67,6 +67,10 @@ module.exports = {
 				700: "#615E58",
 				800: "#312F2C",
 			},
+		},
+		fontFamily: {
+			sans: ["var(--font-inter)"],
+			syne: ["var(--font-syne)"],
 		},
 	},
 };
