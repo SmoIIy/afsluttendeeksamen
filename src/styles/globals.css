@@ -12,7 +12,7 @@
 	}
 
 	.button-secondary {
-		@apply custom-focus border-4 border-purple-400 bg-transparent px-8 py-1 font-bold text-purple-400 hover:text-dark-400 hover:bg-purple-200 hover:border-purple-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-purple-500 active:border-purple-500 cursor-pointer;
+		@apply custom-focus border-4 border-blue-400 bg-transparent px-8 py-1 font-bold text-blue-400 hover:text-dark-400 hover:bg-blue-200 hover:border-blue-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-blue-500 active:border-blue-500 cursor-pointer;
 	}
 
 	.card {
@@ -36,7 +36,7 @@
 	}
 
 	.error {
-		@apply w-full text-center text-purple-400;
+		@apply w-full text-center text-utility-warning;
 	}
 
 	.input {
@@ -53,5 +53,8 @@
 
 	.row {
 		@apply flex flex-row items-center justify-start gap-1;
+	}
+	.hover-underline {
+		@apply absolute left-0 bottom-[-4px] h-[3px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full;
 	}
 }

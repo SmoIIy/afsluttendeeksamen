@@ -21,9 +21,18 @@ export default function Header() {
 			<Link href="/">
 				<Image src={logo} alt="logo" height={60} />
 			</Link>
-			<Link href="/">Forside</Link>
-			<Link href="/om">Om Per</Link>
-			<Link href="/kontakt">Kontakt</Link>
+			<Link className="relative group" href="/">
+				Forside
+				<span className="hover-underline" />
+			</Link>
+			<Link className="relative group" href="/om">
+				Om Per
+				<span className="hover-underline" />
+			</Link>
+			<Link className="relative group" href="/kontakt">
+				Kontakt
+				<span className="hover-underline" />
+			</Link>
 			<Button
 				anchor="/booking"
 				body="Booking"

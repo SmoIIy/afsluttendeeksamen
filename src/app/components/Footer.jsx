@@ -8,13 +8,22 @@ export default async function Footer() {
 			<div className="">
 				<ul className="flex md:flex-row flex-col md:gap-14 gap-6">
 					<li>
-						<Link href="/">Forside</Link>
+						<Link className="relative group" href="/">
+							Forside
+							<span className="hover-underline" />
+						</Link>
 					</li>
 					<li>
-						<Link href="/booking">Booking</Link>
+						<Link className="relative group" href="/booking">
+							Booking
+							<span className="hover-underline" />
+						</Link>
 					</li>
 					<li>
-						<Link href="/kontakt">Kontakt</Link>
+						<Link className="relative group" href="/kontakt">
+							Kontakt
+							<span className="hover-underline" />
+						</Link>
 					</li>
 				</ul>
 			</div>
