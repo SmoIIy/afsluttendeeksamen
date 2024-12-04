@@ -28,14 +28,14 @@ export default async function Profile() {
 			<h2>Hej Per!</h2>
 			<div className="bg-utility-notice">
 				{newItems &&
-					newItems.map((item, key) => (
-						<NewDate data={item} key={key} />
+					newItems.map((item) => (
+						<NewDate data={item} key={item.id} />
 					))}
 			</div>
 			<div className="bg-green-400">
 				{confirmedItems &&
-					confirmedItems.map((item, key) => (
-						<NewDate data={item} key={key} />
+					confirmedItems.map((item) => (
+						<NewDate data={item} key={item.id} />
 					))}
 			</div>
 			<Test />
