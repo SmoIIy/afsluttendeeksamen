@@ -1,5 +1,6 @@
 import "src/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
+import Header from "./components/Header";
 
 const inter = Inter({
 	subsets: ["latin"],

@@ -24,9 +24,11 @@ const BurgerMenu = () => {
 				</Link>
 				{/* Burger Button */}
 				<button
+					type="button"
 					onClick={toggleMenu}
 					className="flex flex-col items-center justify-center w-14 h-12 space-y-1 rounded  text-cream-50"
 				>
+					<span className="sr-only">Åben Menu</span>
 					<span
 						className={`h-1 w-10 bg-purple-400 transition-transform duration-300 ${
 							isOpen ? "rotate-45 translate-y-2" : ""

@@ -4,7 +4,10 @@ import handleForm from "../utils/actions/handleform";
 
 export default function customerForm() {
 	return (
-		<form action={handleForm}>
+		<form
+			action={handleForm}
+			className="grid grid-cols-1 mx-auto gap-6 mb-6 md:grid-cols-2 max-w-3xl"
+		>
 			<div>
 				<label className="label" htmlFor="firstname">
 					Fornavn *
@@ -26,6 +29,18 @@ export default function customerForm() {
 					type="text"
 					name="lastname"
 					id="lastname"
+					required
+				/>
+			</div>
+			<div>
+				<label className="label" htmlFor="event">
+					Event *
+				</label>
+				<input
+					className="input"
+					type="text"
+					name="event"
+					id="event"
 					required
 				/>
 			</div>
@@ -59,7 +74,23 @@ export default function customerForm() {
 				</label>
 				<input className="input" type="date" name="date" id="date" />
 			</div>
-			<input className="button-primary" type="submit" value="Send" />
+			<div className="md:col-span-2">
+				<label className="label" htmlFor="comment">
+					Kommentar *
+				</label>
+				<input
+					className="textarea"
+					type="textarea"
+					name="comment"
+					id="comment"
+					required
+				/>
+			</div>
+			<input
+				className="button-primary md:col-span-2"
+				type="submit"
+				value="Send"
+			/>
 		</form>
 	);
 }
