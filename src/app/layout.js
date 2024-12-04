@@ -1,6 +1,5 @@
 import "src/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
-import Header from "./components/Header";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -17,6 +16,9 @@ const syne = Syne({
 export const metadata = {
 	description: "The React Framework for the Web",
 	title: "Velkommen til DJ Per",
+	icons: {
+		icon: "/Favicon.svg",
+	},
 };
 
 export default async function RootLayout({ children }) {

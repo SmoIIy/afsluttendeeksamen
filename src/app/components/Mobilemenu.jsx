@@ -53,7 +53,7 @@ const BurgerMenu = () => {
 					isOpen ? "scale-100" : " scale-0"
 				}`}
 			>
-				<ul className="space-y-2 flex flex-col items-center">
+				<ul className="space-y-2 flex flex-col gap-4 items-center ">
 					<li>
 						<h2 className="font-syne">Menu</h2>
 					</li>
