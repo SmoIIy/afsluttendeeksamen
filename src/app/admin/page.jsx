@@ -19,7 +19,7 @@ export default async function Profile() {
 	}
 	const newItems = await grapItems("test");
 	const confirmedItems = await grapItems("deleted");
-	console.log("Nye items er: ", newItems);
+	console.log("Nye items er:  ", newItems);
 	console.log("Confirmed items er: ", confirmedItems);
 
 	return (
