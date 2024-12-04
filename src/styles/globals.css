@@ -46,14 +46,14 @@
 	}
 
 	.input {
-		@apply custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
+		@apply mt-2 custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
 	}
 	.textarea {
 		@apply p-2.5 min-h-32 custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
 	}
 
 	.label {
-		@apply text-cream-50;
+		@apply text-cream-50 mb-2;
 	}
 
 	.link {

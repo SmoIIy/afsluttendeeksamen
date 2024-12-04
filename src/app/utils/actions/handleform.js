@@ -10,6 +10,8 @@ export default async function handleForm(formdata) {
 			lastname: formdata.get("lastname"),
 			email: formdata.get("email"),
 			phone: formdata.get("phone"),
+			message: formdata.get("comment"),
+			event: formdata.get("event"),
 		},
 	];
 

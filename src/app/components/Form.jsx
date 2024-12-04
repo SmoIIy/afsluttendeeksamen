@@ -2,6 +2,8 @@
 
 import handleForm from "../utils/actions/handleform";
 
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" />;
+
 export default function customerForm() {
 	return (
 		<form
@@ -17,6 +19,7 @@ export default function customerForm() {
 					type="text"
 					name="firstname"
 					id="firstname"
+					placeholder="Navn"
 					required
 				/>
 			</div>
@@ -29,6 +32,7 @@ export default function customerForm() {
 					type="text"
 					name="lastname"
 					id="lastname"
+					placeholder="Navnesen"
 					required
 				/>
 			</div>
@@ -41,6 +45,7 @@ export default function customerForm() {
 					type="text"
 					name="event"
 					id="event"
+					placeholder="Hvilket event skal du holde?"
 					required
 				/>
 			</div>
@@ -53,6 +58,7 @@ export default function customerForm() {
 					type="tel"
 					name="phone"
 					id="phone"
+					placeholder="8888 8888"
 					required
 				/>
 			</div>
@@ -65,6 +71,7 @@ export default function customerForm() {
 					type="email"
 					name="email"
 					id="email"
+					placeholder="email@email.com"
 					required
 				/>
 			</div>
@@ -76,14 +83,14 @@ export default function customerForm() {
 			</div>
 			<div className="md:col-span-2">
 				<label className="label" htmlFor="comment">
-					Kommentar *
+					Kommentar
 				</label>
-				<input
+				<textarea
 					className="textarea"
 					type="textarea"
 					name="comment"
 					id="comment"
-					required
+					placeholder="Skriv yderligere noter.."
 				/>
 			</div>
 			<input

@@ -12,13 +12,13 @@ export default async function Kontakt() {
 					<h1 className="font-syne font-bold text-6xl text-cream-200">
 						Kontakt
 					</h1>
-					<p className="text-xl">
+					<p className="">
 						Har du spørgsmål eller brug for mere information? Jeg er
 						klar til at hjælpe! Udfyld formularen herunder, eller
 						kontakt mig direkte - så vender jeg hurtigt tilbage.
 					</p>
 					<div className="flex flex-col gap-10">
-						<div className="flex gap-8 text-xl not-prose mb-4">
+						<div className="flex gap-8 items-center not-prose mb-4">
 							<img
 								src="/mailicon.svg"
 								alt=""
@@ -26,7 +26,7 @@ export default async function Kontakt() {
 							/>
 							<p>mail@mail.com</p>
 						</div>
-						<div className="flex gap-8 text-xl not-prose mb-4">
+						<div className="flex gap-8 items-center not-prose mb-4">
 							<img
 								src="/tlficon.svg"
 								alt=""
@@ -34,7 +34,7 @@ export default async function Kontakt() {
 							/>
 							<p>Telefon: +45 8888 8888</p>
 						</div>
-						<div className="flex gap-8 text-xl not-prose mb-4">
+						<div className="flex gap-8 items-center not-prose mb-4">
 							<img
 								src="/adresseicon.svg"
 								alt=""

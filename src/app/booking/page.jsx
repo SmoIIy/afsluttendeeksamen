@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default async function Booking() {
 	return (
-		<div className="bg-[url('/bg_book.jpg')]">
+		<div className="bg-[url('/bg_book.jpg')]  ">
 			<Header />
 			<main>
 				<section className="max-w-5xl mx-auto md:p-0 p-4">
