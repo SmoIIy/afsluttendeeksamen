@@ -24,7 +24,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${inter.variable} ${syne.variable}`}>
-			<body className="bg-dark-400">{children}</body>
+			<body className="bg-dark-400 min-h-screen">{children}</body>
 		</html>
 	);
 }
