@@ -6,14 +6,20 @@
 	p {
 		@apply text-base md:text-xl text-cream-200;
 	}
+	h1 {
+		@apply text-4xl md:text-8xl font-syne font-bold text-cream-400;
+	}
 	h2 {
 		@apply text-4xl md:text-8xl font-syne font-bold text-blue-400;
 	}
 	h3 {
 		@apply text-3xl md:text-4xl font-syne font-bold text-blue-400;
 	}
+	h4 {
+		@apply md:text-2xl text-xl font-lexend font-semibold text-cream-200;
+	}
 	h5 {
-		@apply md:text-2xl text-xl font font-semibold text-cream-200;
+		@apply md:text-2xl text-xl font-lexend font-semibold text-cream-200;
 	}
 
 	.button-primary {
