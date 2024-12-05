@@ -12,6 +12,9 @@
 	h3 {
 		@apply text-3xl md:text-4xl font-syne font-bold text-blue-400;
 	}
+	h5 {
+		@apply md:text-2xl text-xl font font-semibold text-cream-200;
+	}
 
 	.button-primary {
 		@apply text-center custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500 cursor-pointer;
