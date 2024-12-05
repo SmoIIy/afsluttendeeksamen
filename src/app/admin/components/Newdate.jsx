@@ -15,15 +15,22 @@ export default function NewDate({ data, key }) {
 			<button
 				className="button-secondary"
 				type="button"
-				onClick={() => deleteItem(data, data.id)}
+				onClick={() => moveItem(data, data.id)}
 			>
 				Flyt
+			</button>
+			<button
+				type="button"
+				className="button-secondary bg-utility-warning"
+				onClick={() => deleteItem(data.id)}
+			>
+				Slet
 			</button>
 		</div>
 	);
 }
 
-async function deleteItem(date, dateId) {
+async function moveItem(date, dateId) {
 	const { data, insertError } = await supabase
 		.from("deleted")
 		.insert(date)
@@ -35,6 +42,13 @@ async function deleteItem(date, dateId) {
 		console.log("Error with insert: ", insertError);
 	}
 	const { error } = await supabase.from("test").delete().eq("id", dateId);
+	if (error) {
+		console.log(error);
+	}
+}
+
+async function deleteItem(dateId) {
+	const { error } = await supabase.from("deleted").delete().eq("id", dateId);
 	if (error) {
 		console.log(error);
 	}

@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "src/app/utils/supabase/settings";
+import NewDate from "./Newdate";
 
 const ItemList = () => {
 	const [items, setItems] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const { data, error } = await supabase.from("test").select("*");
+			const { data, error } = await supabase.from("deleted").select("*");
 			if (error) console.error(error);
 			else setItems(data);
 		};
@@ -17,10 +18,10 @@ const ItemList = () => {
 
 		// Set up real-time subscription
 		const subscription = supabase
-			.channel("public:test")
+			.channel("public:deleted")
 			.on(
 				"postgres_changes",
-				{ event: "*", schema: "public", table: "test" },
+				{ event: "*", schema: "public", table: "deleted" },
 				(payload) => {
 					if (payload.eventType === "INSERT") {
 						setItems((prevItems) => [...prevItems, payload.new]);
@@ -48,21 +49,13 @@ const ItemList = () => {
 
 	return (
 		<div>
-			{items.map((item) => (
-				<ItemComponent key={item.id} data={item} />
-			))}
+			<h2>Bekræftede henvendelser</h2>
+			<div className="bg-green-200">
+				{items &&
+					items.map((item) => <NewDate data={item} key={item.id} />)}
+			</div>
 		</div>
 	);
 };
-
-function ItemComponent({ data }) {
-	return (
-		<div>
-			<h3>{data.firstname}</h3>
-			<p>{data.lastname}</p>
-			<p>{data.id}</p>
-		</div>
-	);
-}
 
 export default ItemList;

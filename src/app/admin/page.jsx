@@ -5,7 +5,8 @@ import { redirect } from "next/navigation";
 import SignOut from "src/app/admin/components/SignOut";
 import NewDate from "./components/Newdate";
 import grapItems from "../utils/actions/grabitems";
-import Test from "./components/Test";
+import Newitems from "./components/Newitems";
+import Confirmeditems from "./components/Confirmeditems";
 
 export default async function Profile() {
 	const supabase = createServerComponentClient({ cookies });
@@ -26,19 +27,9 @@ export default async function Profile() {
 		<div className="card">
 			{!user && <p>Not logged in</p>}
 			<h2>Hej Per!</h2>
-			<div className="bg-utility-notice">
-				{newItems &&
-					newItems.map((item) => (
-						<NewDate data={item} key={item.id} />
-					))}
-			</div>
-			<div className="bg-green-400">
-				{confirmedItems &&
-					confirmedItems.map((item) => (
-						<NewDate data={item} key={item.id} />
-					))}
-			</div>
-			<Test />
+
+			<Confirmeditems />
+			<Newitems />
 
 			<div className="heading">Last Signed In:</div>
 
