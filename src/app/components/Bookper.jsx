@@ -1,8 +1,9 @@
+import cn from "classnames";
 import Button from "./Button";
 
-export default async function BookPer() {
+export default async function BookPer({ className }) {
 	return (
-		<section className="max-w-5xl mx-auto">
+		<section className={cn(className, "max-w-5xl mx-auto")}>
 			<h1 className="mb-9">Sådan booker du DJPer</h1>
 			<div className="flex justify-center gap-20">
 				<div className="max-w-[490px] flex flex-col gap-8">

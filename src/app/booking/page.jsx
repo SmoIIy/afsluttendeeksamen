@@ -8,7 +8,7 @@ export default async function Booking() {
 	return (
 		<div className="bg-[url('/bg_book.jpg')]  ">
 			<Header />
-			<BookPer />
+			<BookPer className="my-20" />
 			<WhatHappends className="" />
 
 			<main>
@@ -20,7 +20,8 @@ export default async function Booking() {
 							herunder.
 						</p>
 					</div>
-					<Form id="booking" />
+					<span id="bookingformular" />
+					<Form />
 				</section>
 			</main>
 			<Footer />
