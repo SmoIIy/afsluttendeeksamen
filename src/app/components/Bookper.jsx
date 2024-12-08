@@ -2,11 +2,11 @@ import Button from "./Button";
 
 export default async function BookPer() {
 	return (
-		<section className="max-w-7xl mx-auto">
-			<h1>Sådan booker du Per</h1>
-			<div className="flex justify-between">
-				<div className="max-w-[490px]">
-					<h3 className="mb-4">
+		<section className="max-w-5xl mx-auto">
+			<h1 className="mb-9">Sådan booker du DJPer</h1>
+			<div className="flex justify-center gap-20">
+				<div className="max-w-[490px] flex flex-col gap-8">
+					<h3 className="mb-4 text-cream-300">
 						Book nemt DJ Per til din ønskede arangement.{" "}
 					</h3>
 					<p>
@@ -16,8 +16,8 @@ export default async function BookPer() {
 						musikken, så din begivenhed bliver uforglemmelig.
 					</p>
 				</div>
-				<div className="max-w-[490px]">
-					<h3 className="mb-4">
+				<div className="max-w-[490px] flex flex-col gap-8">
+					<h3 className="mb-4 text-cream-300">
 						Er du klar til at få din fest i gang?{" "}
 					</h3>
 					<p>

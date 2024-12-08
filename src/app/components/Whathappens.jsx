@@ -5,7 +5,7 @@ export default async function WhatHappends({ className }) {
 		<section
 			className={cn(
 				className,
-				"bg-dark-400 max-w-7xl mx-auto md:px-32 py-16 lg:py-36 lg:rounded-br-[70px] lg:rounded-tl-[70px]",
+				" mx-auto md:px-32 py-16 lg:py-36 dark-bg",
 			)}
 		>
 			<h3 className="md:text-6xl text-center mb-16">

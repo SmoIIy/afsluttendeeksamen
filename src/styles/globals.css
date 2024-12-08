@@ -75,4 +75,7 @@
 	.hover-underline {
 		@apply absolute left-0 bottom-[-4px] h-[3px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full;
 	}
+	.dark-bg {
+		@apply bg-dark-400 max-w-7xl lg:rounded-br-[70px] lg:rounded-tl-[70px];
+	}
 }
