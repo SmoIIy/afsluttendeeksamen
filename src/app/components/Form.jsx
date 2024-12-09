@@ -2,8 +2,6 @@
 
 import handleForm from "../utils/actions/handleform";
 
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" />;
-
 export default function customerForm() {
 	return (
 		<form
