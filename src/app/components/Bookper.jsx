@@ -4,10 +4,10 @@ import Button from "./Button";
 export default async function BookPer({ className }) {
 	return (
 		<section className={cn(className, "max-w-5xl mx-auto")}>
-			<h1 className="mb-9">Sådan booker du DJPer</h1>
+			<h1 className="">Sådan booker du DJPer</h1>
 			<div className="flex justify-center gap-20">
-				<div className="max-w-[490px] flex flex-col gap-8">
-					<h4 className="mb-4 text-cream-300">
+				<div className="max-w-[490px] flex flex-col gap-4">
+					<h4 className=" text-cream-300">
 						Book nemt DJ Per til din ønskede arangement.{" "}
 					</h4>
 					<p>
@@ -17,8 +17,8 @@ export default async function BookPer({ className }) {
 						musikken, så din begivenhed bliver uforglemmelig.
 					</p>
 				</div>
-				<div className="max-w-[490px] flex flex-col gap-8">
-					<h4 className="mb-4 text-cream-300">
+				<div className="max-w-[490px] flex flex-col gap-4">
+					<h4 className=" text-cream-300">
 						Er du klar til at få din fest i gang?{" "}
 					</h4>
 					<p>

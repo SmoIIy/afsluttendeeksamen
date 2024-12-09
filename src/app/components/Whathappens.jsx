@@ -8,9 +8,7 @@ export default async function WhatHappends({ className }) {
 				" mx-auto md:px-32 py-16 lg:py-36 dark-bg",
 			)}
 		>
-			<h3 className="md:text-6xl text-center mb-16">
-				Hvad skal der ske?
-			</h3>
+			<h3 className=" text-center mb-16">Hvad skal der ske?</h3>
 			<div className="flex justify-between items-center md:items-start flex-col gap-12 md:gap-0 lg:flex-row *:mx-auto">
 				<div className="w-64 text-center flex flex-col gap-4 items-center">
 					<img src="/text.svg" alt="" />

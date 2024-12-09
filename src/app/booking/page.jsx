@@ -8,13 +8,13 @@ import Opsætning from "../components/Opsætning";
 
 export default async function Booking() {
 	return (
-		<div className="bg-[url('/bg_book.jpg')]  ">
+		<div className="bg-[url('/bg_book.jpg')] ">
 			<main>
 				<Header />
 				<BookPer className="my-20" />
-				<WhatHappends className="" />
-				<Inkluderet className="" />
-				<Opsætning className="" />
+				<WhatHappends className="my-20" />
+				<Inkluderet className="my-20" />
+				<Opsætning className="my-20" />
 				<section className="max-w-5xl mx-auto md:p-0 p-4">
 					<div className="max-w-3xl mx-auto mb-8">
 						<h2 className="">Book her</h2>

@@ -4,8 +4,8 @@ import kuffert from "../../assets/kuffert.jpg";
 
 export default async function Indkluderet({ className }) {
 	return (
-		<section className={cn(className, "max-w-7xl mx-auto")}>
-			<h3 className="text-cream-400 md:text-6xl mb-8">
+		<section className={cn(className, "max-w-6xl mx-auto")}>
+			<h3 className="text-cream-400 md:text-6xl mb-8 text-center">
 				Hvad er inkluderet i din DJ-booking?
 			</h3>
 			<div className="flex gap-14">

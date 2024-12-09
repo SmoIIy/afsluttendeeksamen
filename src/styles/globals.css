@@ -7,7 +7,7 @@
 		@apply md:text-xl text-base  text-cream-200;
 	}
 	h1 {
-		@apply md:text-[96px] text-[48px]  font-syne font-bold text-cream-400;
+		@apply md:text-[96px] text-[48px] leading-tight font-syne font-bold text-cream-400;
 	}
 	h2 {
 		@apply md:text-[96px] text-[36px] font-syne font-bold text-blue-400;
@@ -76,6 +76,6 @@
 		@apply absolute left-0 bottom-[-4px] h-[3px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full;
 	}
 	.dark-bg {
-		@apply bg-dark-400 max-w-7xl lg:rounded-br-[70px] lg:rounded-tl-[70px];
+		@apply bg-dark-400 max-w-[1381px] lg:rounded-br-[70px] lg:rounded-tl-[70px];
 	}
 }
