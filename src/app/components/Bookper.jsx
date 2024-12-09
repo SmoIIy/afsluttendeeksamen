@@ -7,9 +7,9 @@ export default async function BookPer({ className }) {
 			<h1 className="mb-9">Sådan booker du DJPer</h1>
 			<div className="flex justify-center gap-20">
 				<div className="max-w-[490px] flex flex-col gap-8">
-					<h3 className="mb-4 text-cream-300">
+					<h4 className="mb-4 text-cream-300">
 						Book nemt DJ Per til din ønskede arangement.{" "}
-					</h3>
+					</h4>
 					<p>
 						Sammen kan vi få gang i festen og skabe den helt rette
 						atmosfære. Uanset om det er et bryllup, en firmafest
@@ -18,9 +18,9 @@ export default async function BookPer({ className }) {
 					</p>
 				</div>
 				<div className="max-w-[490px] flex flex-col gap-8">
-					<h3 className="mb-4 text-cream-300">
+					<h4 className="mb-4 text-cream-300">
 						Er du klar til at få din fest i gang?{" "}
-					</h3>
+					</h4>
 					<p>
 						Her finder du alt, hvad du skal vide om din booking. Jeg
 						sørger for, at det hele er så nemt som muligt - alt, du

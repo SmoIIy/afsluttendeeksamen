@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import WhatHappends from "../components/Whathappens";
 import BookPer from "../components/Bookper";
 import Inkluderet from "../components/Inkluderet";
+import Opsætning from "../components/Opsætning";
 
 export default async function Booking() {
 	return (
@@ -13,6 +14,7 @@ export default async function Booking() {
 				<BookPer className="my-20" />
 				<WhatHappends className="" />
 				<Inkluderet className="" />
+				<Opsætning className="" />
 				<section className="max-w-5xl mx-auto md:p-0 p-4">
 					<div className="max-w-3xl mx-auto mb-8">
 						<h2 className="">Book her</h2>
