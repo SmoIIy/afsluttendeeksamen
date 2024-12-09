@@ -9,7 +9,7 @@ import BurgerMenu from "./Mobilemenu";
 export default function Header() {
 	return (
 		<header>
-			<div className="hidden md:flex h-32 max-w-7xl mx-auto text-xl justify-start  items-center text-cream-200 gap-8">
+			<div className="hidden md:flex h-32 max-w-7xl mx-auto text-xl justify-start items-center text-cream-200 gap-8 px-4">
 				<Link href="/">
 					<Image src={logo} alt="logo" height={60} />
 				</Link>

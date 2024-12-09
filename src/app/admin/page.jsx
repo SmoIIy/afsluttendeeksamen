@@ -5,7 +5,8 @@ import { redirect } from "next/navigation";
 import SignOut from "src/app/admin/components/SignOut";
 import NewDate from "./components/Newdate";
 import grapItems from "../utils/actions/grabitems";
-import Test from "./components/Test";
+import Newitems from "./components/Newitems";
+import Confirmeditems from "./components/Confirmeditems";
 
 export default async function Profile() {
 	const supabase = createServerComponentClient({ cookies });
@@ -19,26 +20,16 @@ export default async function Profile() {
 	}
 	const newItems = await grapItems("test");
 	const confirmedItems = await grapItems("deleted");
-	console.log("Nye items er: ", newItems);
+	console.log("Nye items er:  ", newItems);
 	console.log("Confirmed items er: ", confirmedItems);
 
 	return (
 		<div className="card">
 			{!user && <p>Not logged in</p>}
 			<h2>Hej Per!</h2>
-			<div className="bg-utility-notice">
-				{newItems &&
-					newItems.map((item, key) => (
-						<NewDate data={item} key={key} />
-					))}
-			</div>
-			<div className="bg-green-400">
-				{confirmedItems &&
-					confirmedItems.map((item, key) => (
-						<NewDate data={item} key={key} />
-					))}
-			</div>
-			<Test />
+
+			<Confirmeditems />
+			<Newitems />
 
 			<div className="heading">Last Signed In:</div>
 

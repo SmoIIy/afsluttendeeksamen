@@ -3,16 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+	p {
+		@apply md:text-xl text-base  text-cream-200;
+	}
+	h1 {
+		@apply md:text-[96px] text-[48px] leading-tight font-syne font-bold text-cream-400;
+	}
 	h2 {
-		@apply py-4 text-4xl font-black text-dark-50;
+		@apply md:text-[96px] text-[36px] font-syne font-bold text-blue-400;
+	}
+	h3 {
+		@apply md:text-[64px] text-[32px]  font-syne font-bold text-blue-400;
+	}
+	h4 {
+		@apply md:text-[32px] text-[24px] font-lexend font-semibold text-cream-200;
+	}
+	h5 {
+		@apply md:text-[24px] text-[20px] font-lexend font-semibold text-cream-200;
 	}
 
 	.button-primary {
-		@apply custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500 cursor-pointer;
+		@apply text-center custom-focus border-4 border-green-400 bg-green-400 px-8 py-1 font-bold text-dark-400 hover:bg-green-200 hover:border-green-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-green-500 active:border-green-500 cursor-pointer;
 	}
 
 	.button-secondary {
-		@apply custom-focus border-4 border-blue-400 bg-transparent px-8 py-1 font-bold text-blue-400 hover:text-dark-400 hover:bg-blue-200 hover:border-blue-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-blue-500 active:border-blue-500 cursor-pointer;
+		@apply text-center custom-focus border-4 border-blue-400 bg-transparent px-8 py-1 font-bold text-blue-400 hover:text-dark-400 hover:bg-blue-200 hover:border-blue-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-blue-500 active:border-blue-500 cursor-pointer;
 	}
 
 	.card {
@@ -40,14 +55,14 @@
 	}
 
 	.input {
-		@apply custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
+		@apply mt-2 custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
 	}
 	.textarea {
 		@apply p-2.5 min-h-32 custom-focus w-full rounded-xl border border-dark-300 focus:shadow-none;
 	}
 
 	.label {
-		@apply text-cream-50;
+		@apply text-cream-50 mb-2;
 	}
 
 	.link {
@@ -59,5 +74,8 @@
 	}
 	.hover-underline {
 		@apply absolute left-0 bottom-[-4px] h-[3px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full;
+	}
+	.dark-bg {
+		@apply bg-dark-400 max-w-[1381px] lg:rounded-br-[70px] lg:rounded-tl-[70px];
 	}
 }

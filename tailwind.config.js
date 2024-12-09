@@ -71,6 +71,7 @@ module.exports = {
 		fontFamily: {
 			sans: ["var(--font-inter)"],
 			syne: ["var(--font-syne)"],
+			lexend: ["var(--font-lexend)"],
 		},
 	},
 };

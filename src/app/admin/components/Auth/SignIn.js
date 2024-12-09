@@ -74,6 +74,7 @@ const SignIn = () => {
 							id="password"
 							name="password"
 							type="password"
+							placeholder="********"
 						/>
 						{errors.password && touched.password ? (
 							<div className="text-utility-warning">
@@ -81,7 +82,10 @@ const SignIn = () => {
 							</div>
 						) : null}
 
-						<Link href="/reset-password" className="link w-full">
+						<Link
+							href="/admin/reset-password"
+							className="link w-full"
+						>
 							Forgot your password?
 						</Link>
 
