@@ -4,12 +4,15 @@ import udstyr from "../../assets/udstsyr1.jpg";
 export default async function Opsætning({ className }) {
 	return (
 		<section
-			className={cn(className, "dark-bg mx-auto md:px-32 py-16 lg:py-32")}
+			className={cn(
+				className,
+				"dark-bg mx-auto px-4 md:px-32 py-16 lg:py-32",
+			)}
 		>
 			<h3 className="text-center text-purple-400 mb-4">
 				Opsætning af udstyr
 			</h3>
-			<div className="flex gap-20">
+			<div className="flex flex-col md:flex-row md:gap-20">
 				<Image src={udstyr} alt="Udstyr" />
 				<article className="flex flex-col gap-4 md:min-w-[445px]">
 					<p>

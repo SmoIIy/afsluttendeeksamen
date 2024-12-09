@@ -3,9 +3,9 @@ import Button from "./Button";
 
 export default async function BookPer({ className }) {
 	return (
-		<section className={cn(className, "max-w-5xl mx-auto")}>
+		<section className={cn(className, "max-w-5xl mx-auto p-4 lg:p-0")}>
 			<h1 className="">Sådan booker du DJPer</h1>
-			<div className="flex justify-center gap-20">
+			<div className="flex flex-col lg:flex-row justify-center gap-20">
 				<div className="max-w-[490px] flex flex-col gap-4">
 					<h4 className=" text-cream-300">
 						Book nemt DJ Per til din ønskede arangement.{" "}
