@@ -4,6 +4,7 @@ import Hvemerper from "../components/Hvemerper";
 import Musiknydelse from "../components/Musiknydelse";
 import Kommentarer from "../components/Kommentarer";
 import Udstyr from "../components/Udstyr";
+import Instagramfeed from "../components/Instagramfeed";
 
 export default async function Om() {
 	return (
@@ -14,6 +15,7 @@ export default async function Om() {
 				<Musiknydelse className="my-20" />
 				<Udstyr className="my-20" />
 				<Kommentarer className="my-20" />
+				<Instagramfeed className="my-20" />
 			</main>
 			<Footer />
 		</div>
