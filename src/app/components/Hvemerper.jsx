@@ -12,7 +12,7 @@ export default async function Hvemerper({ className }) {
 				privat fest, er vi klar til at skræddersy musikken, så din
 				begivenhed bliver uforglemmelig.
 			</p>
-			<Image src={perportræt} alt="Billede af per" />
+			<Image src={perportræt} alt="Billede af per" className="w-full" />
 		</section>
 	);
 }
