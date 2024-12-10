@@ -50,7 +50,7 @@ const ItemList = () => {
 	return (
 		<div>
 			<h2>Bekræftede henvendelser</h2>
-			<div className="bg-green-200">
+			<div className="">
 				{items &&
 					items.map((item) => <NewDate data={item} key={item.id} />)}
 			</div>

@@ -50,7 +50,7 @@ const ItemList = () => {
 	return (
 		<div>
 			<h2>Nye henvendelser</h2>
-			<div className="bg-utility-notice">
+			<div className="flex gap-4">
 				{items &&
 					items.map((item) => <NewDate data={item} key={item.id} />)}
 			</div>
