@@ -9,6 +9,7 @@ module.exports = {
 		colors: {
 			utility: {
 				warning: "#ff4545",
+				warninghover: "#ff8585",
 				notice: "#f1c232",
 			},
 			transparent: "transparent",

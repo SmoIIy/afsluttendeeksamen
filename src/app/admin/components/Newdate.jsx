@@ -11,7 +11,7 @@ export default function NewDate({ data }) {
 	};
 
 	return (
-		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-purple-600 to bg-purple-300 rounded-lg items-start">
+		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-600 to bg-dark-400 rounded-lg items-start">
 			<button
 				onClick={openModal}
 				type="button"
@@ -54,7 +54,7 @@ export default function NewDate({ data }) {
 					<span className="h-4 w-12 bg-cream-50 absolute top-0 rounded-l-full after:content-[''] after:absolute after:-right-2 after:top-0 after:w-4 after:h-4 after:bg-cream-50 after:rounded-full"></span>
 
 					<button
-						className="button-secondary"
+						className="button-primary"
 						type="button"
 						onClick={() => moveItem(data, data.id)}
 					>
@@ -62,7 +62,7 @@ export default function NewDate({ data }) {
 					</button>
 					<button
 						type="button"
-						className="button-secondary bg-utility-warning border-utility-warning text-cream-50 hover:text-cream-50 hover:border-cream-50 hover:bg-utility-warning"
+						className="button-secondary bg-utility-warning border-utility-warning text-cream-50 hover:text-cream-50 hover:border-utility-warninghover hover:bg-utility-warninghover"
 						onClick={() => deleteItem(data.id)}
 					>
 						Slet
