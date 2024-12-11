@@ -63,13 +63,18 @@ const BurgerMenu = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href="/booking" className="hover:underline">
-							Book
+						<Link href="/om" className="hover:underline">
+							Om Per
 						</Link>
 					</li>
 					<li>
 						<Link href="/kontakt" className="hover:underline">
 							Kontakt
+						</Link>
+					</li>
+					<li>
+						<Link href="/booking" className="hover:underline">
+							Book
 						</Link>
 					</li>
 				</ul>

@@ -5,7 +5,7 @@ export default async function Kommentarer({ className }) {
 		<section className={cn(className, "mx-auto max-w-6xl")}>
 			<h3 className="text-center text-cream-400">Glade og gode vibes </h3>
 			<h4 className="text-center mb-10">Læs hvad andre siger</h4>
-			<div className="w-full grid grid-cols-3">
+			<div className="w-full grid md:grid-cols-3">
 				<div className="p-4">
 					<p>
 						"Musikken var helt spot on, og DJ Per fik alle til at

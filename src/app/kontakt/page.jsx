@@ -7,7 +7,7 @@ export default async function Kontakt() {
 	return (
 		<div className="w-full min-h-screen bg-dark-400 bg-[url('/bg_kontakt.jpg')]  bg-no-repeat bg-cover">
 			<Header />
-			<main className="justify-center flex items-center gap-12">
+			<main className="justify-center flex flex-col lg:flex-row p-4 md:p-0 items-center gap-12">
 				<article className="prose text-cream-200 max-w-lg">
 					<h1 className="font-syne font-bold text-6xl text-cream-200">
 						Kontakt
