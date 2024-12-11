@@ -1,8 +1,10 @@
 "use client";
 
 import handleForm from "../utils/actions/handleform";
+import { useState } from "react";
 
 export default function customerForm() {
+	const [submitted, setSubmitted] = useState(false);
 	const validatePhoneNumber = (value) => {
 		const phoneRegex = /^\d{8}$/;
 		return phoneRegex.test(value);
@@ -38,13 +40,24 @@ export default function customerForm() {
 		event.preventDefault();
 		const form = event.target;
 		if (form.checkValidity()) {
-			handleForm(event);
+			const formData = new FormData(form);
+			const serializedData = Object.fromEntries(formData.entries());
+			console.log(serializedData);
+			handleForm(serializedData);
+			setSubmitted(true);
 		}
 	};
+	if (submitted) {
+		return (
+			<div className="grid grid-cols-1 mx-auto max-w-3xl text-center text-green-500">
+				<h4>Tak for din besked! Du hører fra mig snarest!</h4>
+			</div>
+		);
+	}
 
 	return (
 		<form
-			action={handleSubmit}
+			onSubmit={handleSubmit}
 			className="grid grid-cols-1 mx-auto gap-6 mb-6 md:grid-cols-2 max-w-3xl"
 		>
 			<div>
@@ -130,14 +143,14 @@ export default function customerForm() {
 				/>
 			</div>
 			<div className="md:col-span-2">
-				<label className="label" htmlFor="comment">
+				<label className="label" htmlFor="message">
 					Kommentar
 				</label>
 				<textarea
 					className="textarea"
 					type="textarea"
-					name="comment"
-					id="comment"
+					name="message"
+					id="message"
 					placeholder="Skriv yderligere noter.."
 					onInput={handleInputChange}
 				/>
