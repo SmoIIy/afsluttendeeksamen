@@ -8,25 +8,28 @@ export default async function Kommentarer({ className }) {
 			<div className="w-full grid grid-cols-3">
 				<div className="p-4">
 					<p>
-						“Lorem ipsum odor amet, adipiscing elit. Vestibulum cot
-						vel. “
+						"Musikken var helt spot on, og DJ Per fik alle til at
+						danse. Alt udstyr og opsætning fungerede perfekt. Kan
+						varmt anbefales!"
 					</p>
-					<p> - XXX XXXXX</p>
+					<p className="p-3"> - Marie Nielsen </p>
+				</div>
+				<div className="p-10">
+					<p>
+						“DJ Per var helt fantastisk til vores bryllup! Han havde
+						styr på alt fra start til slut, og musikken ramte lige i
+						øjet for både os og gæsterne. Udstyret og lyset gjorde
+						det hele endnu federe. Tak for en uforglemmelig aften!”
+					</p>
+					<p className="p-3"> - Louise og Anders</p>
 				</div>
 				<div className="p-4">
 					<p>
-						"Lorem ipsum odor amet, elit. Vestibulum cot elit sem
-						nostra torto pulvinar is class pellentesque."
+						“Fra opsætningen til musikken var alt i topklasse. DJ
+						Per gjorde vores firmafest til en aften, vi sent vil
+						glemme. Kan kun anbefales!”
 					</p>
-					<p> - XXXX XXXX</p>
-				</div>
-				<div className="p-4">
-					<p>
-						"Augue elit sem pulvinar nostra tortor mus risus.
-						Volutpat laoreet vitae primis mollis class
-						pellentesque."
-					</p>
-					<p> - XXXXXXX XXXX</p>
+					<p className="p-3"> - Henrik Petersen</p>
 				</div>
 			</div>
 		</section>
