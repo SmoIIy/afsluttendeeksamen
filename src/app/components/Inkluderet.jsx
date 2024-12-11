@@ -23,7 +23,7 @@ export default async function Indkluderet({ className }) {
 					<h4 className="mb-5 text-3xl md:text-4xl">
 						Her er oversigt over mit udstyr:
 					</h4>
-					<ul>
+					<ul className="list-disc">
 						<li>Højtalere</li>
 						<li>DJ-pult og mikser</li>
 						<li>Mikrofoner</li>

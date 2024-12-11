@@ -7,7 +7,7 @@
 		@apply md:text-xl text-base  text-cream-200;
 	}
 	li {
-		@apply md:text-xl text-base  text-cream-200 list-disc font-sans font-normal;
+		@apply md:text-xl text-base  text-cream-200  font-sans font-normal;
 	}
 	h1 {
 		@apply md:text-[96px] text-[48px] leading-tight font-syne font-bold text-cream-400;
