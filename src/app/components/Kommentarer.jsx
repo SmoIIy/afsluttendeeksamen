@@ -12,7 +12,7 @@ export default async function Kommentarer({ className }) {
 						danse. Alt udstyr og opsætning fungerede perfekt. Kan
 						varmt anbefales!"
 					</p>
-					<p className="p-3"> - Marie Nielsen </p>
+					<p className="p-3 font-bold"> - Marie Nielsen </p>
 				</div>
 				<div className="p-10">
 					<p>
@@ -21,15 +21,15 @@ export default async function Kommentarer({ className }) {
 						øjet for både os og gæsterne. Udstyret og lyset gjorde
 						det hele endnu federe. Tak for en uforglemmelig aften!”
 					</p>
-					<p className="p-3"> - Louise og Anders</p>
+					<p className="p-3 font-bold"> - Louise og Anders</p>
 				</div>
-				<div className="p-4">
+				<div className="p-4 ">
 					<p>
 						“Fra opsætningen til musikken var alt i topklasse. DJ
 						Per gjorde vores firmafest til en aften, vi sent vil
 						glemme. Kan kun anbefales!”
 					</p>
-					<p className="p-3"> - Henrik Petersen</p>
+					<p className="p-3 font-bold"> - Henrik Petersen</p>
 				</div>
 			</div>
 		</section>
