@@ -8,7 +8,7 @@ import Opsætning from "../components/Opsætning";
 
 export default async function Booking() {
 	return (
-		<div className="bg-[url('/bg_book.jpg')] ">
+		<div className="bg-[url('/bg_book.jpg')] bg-no-repeat bg-cover">
 			<main>
 				<Header />
 				<BookPer className="my-20" />

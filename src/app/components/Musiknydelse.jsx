@@ -15,16 +15,19 @@ export default async function Musiknydelse({ className }) {
 			<div className="flex flex-col lg:flex-row justify-center">
 				<article className="max-w-[500px] mb-4">
 					<p className="mb-4">
-						Sammen kan vi få gang i festen og skabe den helt rette
-						atmosfære. Uanset om det er et bryllup, en firmafest
-						eller en privat fest, er vi klar til at skræddersy
-						musikken, så din begivenhed bliver uforglemmelig.
+						Når jeg spiller til dit event, er det vigtigste for mig,
+						at musikken passer til dig og dine gæster. Sammen finder
+						vi den helt rigtige stemning til din fest. Jeg nyder at
+						spille de nyeste hits, men har også en stor kærlighed
+						til tidløse klassikere fra alle årtier – fra ikoniske
+						numre fra 70’erne og 80’erne til nutidens største
+						tracks.
 					</p>
 					<p>
-						Sammen kan vi få gang i festen og skabe den helt rette
-						atmosfære. Uanset om det er et bryllup, en firmafest
-						eller en privat fest, er vi klar, så din begivenhed
-						bliver uforglemmelig.
+						Uanset din musiksmag kan du regne med, at jeg skaber et
+						varieret og tilpasset set, der sikrer, at alle får en
+						oplevelse, de vil huske. Denne version integrerer den
+						nye sætning og fremstår sammenhængende og professionel.
 					</p>
 				</article>
 				<div className="grid grid-cols-2 gap-4 max-w-[500px]">
