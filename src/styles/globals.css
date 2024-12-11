@@ -6,11 +6,14 @@
 	p {
 		@apply md:text-xl text-base  text-cream-200;
 	}
+	li {
+		@apply md:text-xl text-base  text-cream-200 list-disc font-sans font-normal;
+	}
 	h1 {
 		@apply md:text-[96px] text-[48px] leading-tight font-syne font-bold text-cream-400;
 	}
 	h2 {
-		@apply md:text-[96px] text-[36px] font-syne font-bold text-blue-400;
+		@apply md:text-[96px] text-[36px] font-syne font-bold text-cream-50;
 	}
 	h3 {
 		@apply md:text-[64px] text-[32px]  font-syne font-bold text-blue-400;
