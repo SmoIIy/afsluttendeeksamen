@@ -5,9 +5,21 @@ import { useState } from "react";
 
 export default function NewDate({ data }) {
 	const [isOpen, setIsOpen] = useState(false);
+	const [confirmAction, setConfirmAction] = useState(null); // State for confirmation action
 
 	const openModal = () => {
 		setIsOpen((prevState) => !prevState);
+	};
+
+	const handleConfirm = async () => {
+		if (confirmAction) {
+			await confirmAction();
+		}
+		setConfirmAction(null); // Reset the action after execution
+	};
+
+	const cancelConfirm = () => {
+		setConfirmAction(null); // Cancel confirmation
 	};
 
 	return (
@@ -45,30 +57,51 @@ export default function NewDate({ data }) {
 
 			{isOpen && (
 				<div className="flex flex-col *:w-full gap-2 p-4 justify-around absolute w-72 bg-cream-50 rounded-lg">
-					{/* <span
-						className="h-4 w-12 bg-cream-50 absolute top-0 left-10"
-						style={{
-							clipPath:
-								"polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%)",
-						}}
-					></span> */}
-
 					<span className="h-4 w-12 bg-cream-50 absolute top-0 rounded-l-full after:content-[''] after:absolute after:-right-2 after:top-0 after:w-4 after:h-4 after:bg-cream-50 after:rounded-full"></span>
 
 					<button
 						className="button-primary"
 						type="button"
-						onClick={() => moveItem(data, data.id)}
+						onClick={() =>
+							setConfirmAction(
+								() => () => moveItem(data, data.id),
+							)
+						}
 					>
 						Flyt
 					</button>
 					<button
 						type="button"
-						className="button-secondary bg-utility-warning border-utility-warning text-cream-50 hover:text-cream-50 hover:border-utility-warninghover hover:bg-utility-warninghover"
-						onClick={() => deleteItem(data.id)}
+						className="button-secondary button-color-delete"
+						onClick={() =>
+							setConfirmAction(() => () => deleteItem(data.id))
+						}
 					>
 						Slet
 					</button>
+				</div>
+			)}
+
+			{/* Confirmation Modal */}
+			{confirmAction && (
+				<div className="fixed inset-0 flex items-center justify-center bg-dark-500 bg-opacity-50">
+					<div className="bg-cream-50 p-6 rounded-lg shadow-lg text-center ">
+						<p className="mb-4 text-dark-800">Venligst bekræft</p>
+						<div className="flex gap-4 justify-end">
+							<button
+								onClick={handleConfirm}
+								className="button-primary"
+							>
+								Udfør
+							</button>
+							<button
+								onClick={cancelConfirm}
+								className="button-secondary button-color-delete"
+							>
+								Fortryd
+							</button>
+						</div>
+					</div>
 				</div>
 			)}
 		</div>

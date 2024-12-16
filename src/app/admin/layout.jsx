@@ -19,12 +19,6 @@ export default async function AdminLayout({ children }) {
 	return (
 		<div className="min-h-screen">
 			<main className="w-full">
-				<header className="w-full relative top-0 bg-dark-800 p-4 flex mx-auto justify-between items-center">
-					<img src="logo.svg" alt="" />
-					<h1 className="text-3xl">Admin</h1>
-
-					<SignOut />
-				</header>
 				<AuthProvider accessToken={session?.access_token}>
 					{children}
 				</AuthProvider>
