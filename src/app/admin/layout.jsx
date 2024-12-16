@@ -1,25 +1,34 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
 
-import AuthProvider from 'src/app/admin/components/AuthProvider';
+import AuthProvider from "src/app/admin/components/AuthProvider";
+import SignOut from "./components/SignOut";
 
-import 'src/styles/globals.css';
+import "src/styles/globals.css";
 
 // do not cache this layout
 export const revalidate = 0;
 
 export default async function AdminLayout({ children }) {
-  const supabase = createServerComponentClient({ cookies });
+	const supabase = createServerComponentClient({ cookies });
 
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
+	const {
+		data: { session },
+	} = await supabase.auth.getSession();
 
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <main className="flex w-full flex-1 shrink-0 flex-col items-center justify-center px-8 text-center sm:px-20">
-        <AuthProvider accessToken={session?.access_token}>{children}</AuthProvider>
-      </main>
-    </div>
-  );
+	return (
+		<div className="min-h-screen">
+			<main className="w-full">
+				<header className="w-full relative top-0 bg-dark-800 p-4 flex mx-auto justify-between items-center">
+					<img src="logo.svg" alt="" />
+					<h1 className="text-3xl">Admin</h1>
+
+					<SignOut />
+				</header>
+				<AuthProvider accessToken={session?.access_token}>
+					{children}
+				</AuthProvider>
+			</main>
+		</div>
+	);
 }

@@ -24,19 +24,12 @@ export default async function Profile() {
 	console.log("Confirmed items er: ", confirmedItems);
 
 	return (
-		<div className="card">
+		<section className="p-4 max-w-7xl mx-auto">
 			{!user && <p>Not logged in</p>}
-			<h2>Hej Per!</h2>
+			<h1 className="sr-only">Hej Per!</h1>
 
 			<Confirmeditems />
 			<Newitems />
-
-			<div className="heading">Last Signed In:</div>
-
-			<Link className="button-primary" href="/">
-				Go Home
-			</Link>
-			<SignOut />
-		</div>
+		</section>
 	);
 }

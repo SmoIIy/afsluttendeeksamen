@@ -17,10 +17,10 @@ export default function SignOut() {
 	return (
 		<button
 			type="button"
-			className="button-secondary"
+			className="button-primary"
 			onClick={handleSignOut}
 		>
-			Sign Out
+			Log Ud
 		</button>
 	);
 }

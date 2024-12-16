@@ -29,7 +29,7 @@ const SignIn = () => {
 
 	return (
 		<div className="card bg-dark-700">
-			<h2 className="text-cream-50 w-full text-center">Sign In</h2>
+			<h2 className="text-cream-50 w-full text-center">Log In</h2>
 			<Formik
 				initialValues={{
 					email: "",
@@ -86,11 +86,11 @@ const SignIn = () => {
 							href="/admin/reset-password"
 							className="link w-full"
 						>
-							Forgot your password?
+							Glemt adgangskode?
 						</Link>
 
 						<button className="button-primary w-full" type="submit">
-							Submit
+							Login
 						</button>
 					</Form>
 				)}

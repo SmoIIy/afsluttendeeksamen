@@ -11,7 +11,7 @@ export default function NewDate({ data }) {
 	};
 
 	return (
-		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-600 to bg-dark-400 rounded-lg items-start">
+		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start">
 			<button
 				onClick={openModal}
 				type="button"
