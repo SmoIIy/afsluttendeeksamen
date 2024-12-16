@@ -23,7 +23,7 @@ export default function NewDate({ data }) {
 	};
 
 	return (
-		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start shadow border border-dark-300">
+		<div className="flex flex-col w-96 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start shadow border border-dark-300">
 			<button
 				onClick={openModal}
 				type="button"
@@ -40,13 +40,14 @@ export default function NewDate({ data }) {
 				</svg>
 			</button>
 			<p className="sr-only">ID: {data.id}</p>
-			<p className="text-2xl">Ønsket Dato: {data.date}</p>
 			<p className="text-base">
-				Navn: {data.firstname} {data.lastname}
+				{data.firstname} {data.lastname}
 			</p>
-			<div className="flex flex-col items-start *:text-base">
-				<p>Email: {data.email}</p>
-				<p>Telefon: {data.phone}</p>
+			<p className="text-2xl">Ønsket Dato: {data.date}</p>
+
+			<div className="flex flex-col items-start *:text-base *:font-extralight my-4">
+				<p>{data.email}</p>
+				<p>{data.phone}</p>
 			</div>
 			<div className="min-h-32 w-full flex flex-col items-start   ">
 				<p className="text-cream-50 mb-1">Kommentar: </p>
