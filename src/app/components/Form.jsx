@@ -47,6 +47,7 @@ export default function customerForm() {
 			setSubmitted(true);
 		}
 	};
+	const today = new Date().toISOString().split("T")[0];
 	if (submitted) {
 		return (
 			<div className="grid grid-cols-1 mx-auto max-w-3xl text-center text-green-500">
@@ -139,6 +140,7 @@ export default function customerForm() {
 					type="date"
 					name="date"
 					id="date"
+					min={today}
 					onInput={handleInputChange}
 				/>
 			</div>

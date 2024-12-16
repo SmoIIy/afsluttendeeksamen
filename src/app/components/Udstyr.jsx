@@ -1,5 +1,8 @@
 import cn from "classnames";
 import Image from "next/image";
+import udstyr1 from "../../assets/udstyr1.webp";
+import udstyr2 from "../../assets/udstyr2.webp";
+import udstyr3 from "../../assets/udstyr3.webp";
 
 export default async function Udstyr({ className }) {
 	return (
@@ -29,20 +32,20 @@ export default async function Udstyr({ className }) {
 					</p>
 				</article>
 				<div className="grid grid-cols-2 gap-4 max-w-[500px]">
-					<img
+					<Image
 						className="col-span-2"
-						src="https://picsum.photos/500/270"
-						alt=""
+						src={udstyr1}
+						alt="billede af dj pult"
 					/>
-					<img
-						className=""
-						src="https://picsum.photos/245/150"
-						alt=""
+					<Image
+						className="aspect-square object-cover"
+						src={udstyr2}
+						alt="billede af dj per"
 					/>
-					<img
-						className=""
-						src="https://picsum.photos/245/150"
-						alt=""
+					<Image
+						className="aspect-square object-cover"
+						src={udstyr3}
+						alt="billede af dj pult"
 					/>
 				</div>
 			</div>
