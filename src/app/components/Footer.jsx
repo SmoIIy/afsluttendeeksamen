@@ -20,6 +20,12 @@ export default async function Footer() {
 						</Link>
 					</li>
 					<li>
+						<Link className="relative group" href="/om">
+							Om
+							<span className="hover-underline" />
+						</Link>
+					</li>
+					<li>
 						<Link className="relative group" href="/kontakt">
 							Kontakt
 							<span className="hover-underline" />
@@ -50,7 +56,10 @@ export default async function Footer() {
 						</a>
 					</li>
 					<li>
-						<a href="spotify.com" target="_blank">
+						<a
+							href="https://open.spotify.com/user/1174701361?si=5e82365a45c1474a"
+							target="_blank"
+						>
 							<Image
 								src="/spotify.svg"
 								width={25}
