@@ -39,7 +39,7 @@ export default function NewDate({ data }) {
 			<div className="min-h-32 w-full flex flex-col items-start   ">
 				<p className="text-cream-50 mb-1">Kommentar: </p>
 				<p className="bg-cream-50 min-h-32  w-full p-4 rounded-md text-sm text-dark-800 italic">
-					" {data.message} "
+					"{data.message}"
 				</p>
 			</div>
 
