@@ -11,7 +11,7 @@ export default function NewDate({ data }) {
 	};
 
 	return (
-		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start">
+		<div className="flex flex-col w-96 gap-4 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start shadow border border-dark-300">
 			<button
 				onClick={openModal}
 				type="button"
@@ -36,9 +36,11 @@ export default function NewDate({ data }) {
 				<p>Email: {data.email}</p>
 				<p>Telefon: {data.phone}</p>
 			</div>
-			<div className="min-h-32 w-full flex flex-col items-start *:text-dark-800 p-4 rounded-md bg-cream-50">
-				<p>Noter: </p>
-				<p className="  text-sm">{data.message}</p>
+			<div className="min-h-32 w-full flex flex-col items-start   ">
+				<p className="text-cream-50 mb-1">Kommentar: </p>
+				<p className="bg-cream-50 min-h-32  w-full p-4 rounded-md text-sm text-dark-800 italic">
+					" {data.message} "
+				</p>
 			</div>
 
 			{isOpen && (

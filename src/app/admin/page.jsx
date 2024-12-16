@@ -27,9 +27,8 @@ export default async function Profile() {
 		<section className="p-4 max-w-7xl mx-auto">
 			{!user && <p>Not logged in</p>}
 			<h1 className="sr-only">Hej Per!</h1>
-
-			<Confirmeditems />
 			<Newitems />
+			<Confirmeditems />
 		</section>
 	);
 }

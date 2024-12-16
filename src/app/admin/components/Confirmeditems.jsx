@@ -49,7 +49,7 @@ const ItemList = () => {
 
 	return (
 		<div>
-			<h2 className="text-green-400 text-5xl mb-8">
+			<h2 className="text-green-400 text-5xl my-8">
 				Bekræftede henvendelser
 			</h2>
 			<div className="flex gap-4 max-w-7xl flex-wrap">
