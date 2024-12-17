@@ -2,6 +2,8 @@
 
 ## Tech Stack
 
+Skriv om hvorfor ej wordpress
+
 ---
 
 ### React + Next.js
