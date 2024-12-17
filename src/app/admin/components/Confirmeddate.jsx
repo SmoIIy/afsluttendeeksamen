@@ -2,7 +2,6 @@
 
 import { supabase } from "src/app/utils/supabase/settings";
 import { useState } from "react";
-import { formatDateBack } from "src/app/utils/actions/formatdate";
 
 export default function NewDate({ data }) {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +19,11 @@ export default function NewDate({ data }) {
 	};
 
 	const cancelConfirm = () => {
-		setIsOpen(false);
 		setConfirmAction(null); // Cancel confirmation
 	};
 
 	return (
-		<div className="flex flex-col w-96 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start shadow border border-utility-notice">
+		<div className="flex flex-col w-96 p-4 bg-gradient-to-r from-dark-700 to bg-dark-500 rounded-lg items-start shadow border border-green-300">
 			<button
 				onClick={openModal}
 				type="button"
@@ -64,17 +62,6 @@ export default function NewDate({ data }) {
 					<span className="h-4 w-12 bg-cream-50 absolute top-0 rounded-l-full after:content-[''] after:absolute after:-right-2 after:top-0 after:w-4 after:h-4 after:bg-cream-50 after:rounded-full"></span>
 
 					<button
-						className="button-primary"
-						type="button"
-						onClick={() =>
-							setConfirmAction(
-								() => () => moveItem(data, data.id),
-							)
-						}
-					>
-						Bekræft
-					</button>
-					<button
 						type="button"
 						className="button-secondary button-color-delete"
 						onClick={() =>
@@ -89,7 +76,7 @@ export default function NewDate({ data }) {
 			{/* Confirmation Modal */}
 			{confirmAction && (
 				<div className="fixed inset-0 flex items-center justify-center bg-dark-500 bg-opacity-50">
-					<div className="bg-cream-50 p-4 rounded-lg shadow-lg text-center ">
+					<div className="bg-cream-50 p-6 rounded-lg shadow-lg text-center ">
 						<p className="mb-4 text-dark-800">Venligst bekræft</p>
 						<div className="flex gap-4 justify-end">
 							<button
@@ -112,39 +99,11 @@ export default function NewDate({ data }) {
 	);
 }
 
-async function moveItem(date, dateId) {
-	// Format date.date
-	if (date.date) {
-		try {
-			console.log("date er ", typeof date.date);
-			date.date = formatDateBack(date.date);
-		} catch (error) {
-			console.error(error.message);
-			return;
-		}
-	} else {
-		console.warn("No date provided to format.");
-	}
-
-	const { data, insertError } = await supabase
-		.from("confirmed")
-		.insert(date)
-		.select();
-	if (data) {
-		console.log("inserted ", data);
-	}
-	if (insertError) {
-		console.log("Error with insert: ", insertError);
-	}
-
-	const { error } = await supabase.from("new").delete().eq("id", dateId);
-	if (error) {
-		console.log(error);
-	}
-}
-
 async function deleteItem(dateId) {
-	const { error } = await supabase.from("new").delete().eq("id", dateId);
+	const { error } = await supabase
+		.from("confirmed")
+		.delete()
+		.eq("id", dateId);
 	if (error) {
 		console.log(error);
 	}

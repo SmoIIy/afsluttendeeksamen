@@ -17,7 +17,7 @@ export default function SignOut() {
 	return (
 		<button
 			type="button"
-			className="button-primary"
+			className="button-primary text-sm md:text-xl"
 			onClick={handleSignOut}
 		>
 			Log Ud

@@ -16,7 +16,7 @@ export default async function handleForm(formdata) {
 	// ];
 
 	const { data, error } = await supabase
-		.from("test")
+		.from("new")
 		.insert(formdata)
 		.select();
 
