@@ -11,7 +11,12 @@ export default function Header() {
 		<header>
 			<div className="hidden md:flex h-32 max-w-7xl mx-auto text-xl justify-start items-center text-cream-200 gap-8 px-4">
 				<Link href="/">
-					<Image src={logo} alt="logo" height={60} />
+					<Image
+						src={logo}
+						alt="logo"
+						height={60}
+						className="hover:scale-105 transition-transform duration-300"
+					/>
 				</Link>
 				<Link className="relative group" href="/">
 					Forside
