@@ -61,7 +61,7 @@ export default function customerForm() {
 			onSubmit={handleSubmit}
 			className="grid grid-cols-1 mx-auto gap-6 mb-6 md:grid-cols-2 max-w-3xl"
 		>
-			<p className="text-xl text-cream-200 col-span-2">
+			<p className="text-xl text-cream-200 md:col-span-2">
 				Fortæl mig om dit event ved at udfylde formularen herunder.
 			</p>
 			<div>
@@ -160,7 +160,7 @@ export default function customerForm() {
 					onInput={handleInputChange}
 				/>
 			</div>
-			<div class="flex items-center mb-4 col-span-2">
+			<div class="flex items-center mb-4 md:col-span-2">
 				<input
 					id="default-checkbox"
 					type="checkbox"
