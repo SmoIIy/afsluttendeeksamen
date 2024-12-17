@@ -9,7 +9,7 @@ import Spotify from "../components/Spotify";
 
 export default async function Om() {
 	return (
-		<div className="min-h-screen bg-[url('/bg_om.jpg')] bg-no-repeat bg-cover">
+		<div className="min-h-screen bg-[url('/bg_om.webp')] bg-no-repeat bg-cover">
 			<Header />
 			<main>
 				<Hvemerper className="mb-20" />
