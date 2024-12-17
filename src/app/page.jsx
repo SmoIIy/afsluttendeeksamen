@@ -8,7 +8,7 @@ export default async function Home() {
 	return (
 		<div className="w-full min-h-screen bg-dark-400 bg-[url('/bg_forside.jpg')] bg-no-repeat bg-cover">
 			<Header />
-			<main className="mx-auto h-full w-full flex flex-col justify-center items-center mt-16">
+			<main className="mx-auto h-full w-full flex flex-col justify-center items-center mt-16 mb-[200px]">
 				<h2 className="font-syne font-normal text-3xl md:text-6xl text-cream-200 mb-4">
 					Velkommen til
 				</h2>

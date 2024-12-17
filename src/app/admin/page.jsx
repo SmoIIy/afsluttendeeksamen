@@ -8,6 +8,10 @@ import grapItems from "../utils/actions/grabitems";
 import Newitems from "./components/Newitems";
 import Confirmeditems from "./components/Confirmeditems";
 
+export const metadata = {
+	title: "Admin",
+};
+
 export default async function Profile() {
 	const supabase = createServerComponentClient({ cookies });
 

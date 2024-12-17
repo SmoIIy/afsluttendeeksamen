@@ -1,3 +1,5 @@
 export default function Loading() {
-  return <div className="card h-96">Loading...</div>;
+	return (
+		<div className="bg-[url('/bg_forside.webp')] bg-no-repeat bg-cover w-full min-h-screen"></div>
+	);
 }

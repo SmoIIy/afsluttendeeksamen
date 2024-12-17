@@ -19,7 +19,7 @@ export default function customerForm() {
 		const input = event.target;
 		if (input.name === "phone" && !validatePhoneNumber(input.value)) {
 			input.setCustomValidity(
-				"Venligst indtast et 8-cifret telefonnummer.",
+				"Venligst indtast et 8-cifret telefonnummer, uden mellemrum",
 			);
 		} else if (input.name === "phone") {
 			input.setCustomValidity("");
@@ -50,7 +50,7 @@ export default function customerForm() {
 	const today = new Date().toISOString().split("T")[0];
 	if (submitted) {
 		return (
-			<div className="grid grid-cols-1 mx-auto max-w-3xl text-center text-green-500">
+			<div className="grid grid-cols-1 mx-auto max-w-3xl place-content-center text-center text-green-500 md:min-h-[800px]">
 				<h4>Tak for din besked! Du hører fra mig snarest!</h4>
 			</div>
 		);
@@ -61,6 +61,9 @@ export default function customerForm() {
 			onSubmit={handleSubmit}
 			className="grid grid-cols-1 mx-auto gap-6 mb-6 md:grid-cols-2 max-w-3xl"
 		>
+			<p className="text-xl text-cream-200 md:col-span-2">
+				Fortæl mig om dit event ved at udfylde formularen herunder.
+			</p>
 			<div>
 				<label className="label" htmlFor="firstname">
 					Fornavn *
@@ -157,8 +160,21 @@ export default function customerForm() {
 					onInput={handleInputChange}
 				/>
 			</div>
+			<div class="flex items-center mb-4 md:col-span-2">
+				<input
+					id="default-checkbox"
+					type="checkbox"
+					value=""
+					className="w-4 h-4 text-green-400 bg-dark-100 border-dark-100 rounded focus:ring-blue-500"
+					required
+				/>
+				<label htmlFor="default-checkbox" class="ms-2 label mb-0">
+					Bekræft at jeg gerne må kontakte dig på den angivede mail på
+					det angivede telefonnummer *
+				</label>
+			</div>
 			<input
-				className="button-primary md:col-span-2"
+				className="button-primary md:col-span-2 md:mx-52"
 				type="submit"
 				value="Send"
 			/>

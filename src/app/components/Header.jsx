@@ -18,10 +18,7 @@ export default function Header() {
 						className="hover:scale-105 transition-transform duration-300"
 					/>
 				</Link>
-				<Link className="relative group" href="/">
-					Forside
-					<span className="hover-underline" />
-				</Link>
+
 				<Link className="relative group" href="/om">
 					Om Per
 					<span className="hover-underline" />

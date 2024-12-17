@@ -18,7 +18,11 @@ const BurgerMenu = () => {
 
 	return (
 		<div className="relative md:hidden">
-			<div className="flex p-4 w-full justify-between items-center bg-dark-500">
+			<div
+				className={`flex p-4 w-full justify-between duration-300 transition-colors items-center     ${
+					isOpen ? "bg-dark-500" : " bg-transparent"
+				}`}
+			>
 				<Link href="/">
 					<img src="/mobillogo.png" alt="" />
 				</Link>
@@ -30,17 +34,17 @@ const BurgerMenu = () => {
 				>
 					<span className="sr-only">Åben Menu</span>
 					<span
-						className={`h-1 w-10 bg-purple-400 transition-transform duration-300 ${
+						className={`h-1 w-10 bg-cream-400 transition-transform duration-300 ${
 							isOpen ? "rotate-45 translate-y-2" : ""
 						}`}
 					/>
 					<span
-						className={`h-1 ml-1 w-10 bg-purple-400 transition-opacity duration-300 ${
+						className={`h-1 ml-1 w-10 bg-cream-400 transition-opacity duration-300 ${
 							isOpen ? "opacity-0" : "opacity-100"
 						}`}
 					/>
 					<span
-						className={`h-1 w-10 bg-purple-400 transition-transform duration-300 ${
+						className={`h-1 w-10 bg-cream-400 transition-transform duration-300 ${
 							isOpen ? " -rotate-45 -translate-y-2" : ""
 						}`}
 					/>

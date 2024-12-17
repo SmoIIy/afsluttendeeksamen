@@ -19,7 +19,8 @@ const lexend = Lexend_Exa({
 });
 
 export const metadata = {
-	description: "The React Framework for the Web",
+	description:
+		"Jeg er DJ Per, og jeg brænder for at skabe øjeblikke, hvor dansegulvet er fyldt, og stemningen er helt i top. Med en kærlighed til musik og erfaring fra mange forskellige events sørger jeg for, at musikken altid passer perfekt til festen og giver dig og dine gæster en oplevelse, I sent vil glemme.",
 	title: "Velkommen til DJ Per",
 	icons: {
 		icon: "/Favicon.svg",
