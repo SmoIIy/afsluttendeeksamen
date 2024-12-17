@@ -11,11 +11,11 @@ export default async function Booking() {
 		<div className="bg-[url('/bg_book.jpg')] bg-no-repeat bg-cover">
 			<main>
 				<Header />
-				<BookPer className="my-20" />
-				<WhatHappends className="my-20" />
-				<Inkluderet className="my-20" />
-				<Opsætning className="my-20" />
-				<section className="max-w-5xl mx-auto md:p-0 p-4 mb-20">
+				<BookPer className="lg:mb-60 mb-20 mt-20" />
+				<WhatHappends className="lg:my-60 my-20" />
+				<Inkluderet className="lg:my-60 my-20" />
+				<Opsætning className="lg:my-60 my-20" />
+				<section className="max-w-5xl mx-auto md:p-0 p-4 mb-40">
 					<div className="max-w-3xl mx-auto mb-8">
 						<h2 className="">Book her</h2>
 						<p className="text-xl text-cream-200">

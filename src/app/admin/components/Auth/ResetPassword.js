@@ -32,8 +32,8 @@ const ResetPassword = () => {
 	}
 
 	return (
-		<div className="card">
-			<h2 className="w-full text-center">Forgot Password</h2>
+		<div className="card bg-dark-700 max-w-96">
+			<h2 className="w-full text-center text-3xl">Glemt Password</h2>
 			<Formik
 				initialValues={{
 					email: "",
@@ -43,7 +43,9 @@ const ResetPassword = () => {
 			>
 				{({ errors, touched }) => (
 					<Form className="column w-full">
-						<label htmlFor="email">Email</label>
+						<label className="label" htmlFor="email">
+							Email
+						</label>
 						<Field
 							className={cn("input", errors.email && "bg-red-50")}
 							id="email"
@@ -60,7 +62,7 @@ const ResetPassword = () => {
 							className="button-secondary w-full"
 							type="submit"
 						>
-							Send Instructions
+							Send Instrukser
 						</button>
 					</Form>
 				)}
@@ -74,7 +76,7 @@ const ResetPassword = () => {
 				<div className="text-dark-800 text-center">{successMsg}</div>
 			)}
 			<Link href="/admin/sign-in" className="link">
-				Remember your password? Sign In.
+				Tilbage til login
 			</Link>
 		</div>
 	);

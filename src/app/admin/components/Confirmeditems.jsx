@@ -49,8 +49,10 @@ const ItemList = () => {
 
 	return (
 		<div>
-			<h2>Bekræftede henvendelser</h2>
-			<div className="">
+			<h2 className="text-green-400 text-5xl my-8">
+				Bekræftede henvendelser
+			</h2>
+			<div className="flex gap-4 max-w-7xl flex-wrap">
 				{items &&
 					items.map((item) => <NewDate data={item} key={item.id} />)}
 			</div>

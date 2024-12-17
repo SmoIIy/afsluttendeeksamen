@@ -1,5 +1,6 @@
 import cn from "classnames";
 import Image from "next/image";
+import image from "../../assets/nyde.webp";
 
 export default async function Musiknydelse({ className }) {
 	return (
@@ -12,7 +13,7 @@ export default async function Musiknydelse({ className }) {
 			<h3 className="text-cream-400 text-center mb-4">
 				Musik alle kan nyde
 			</h3>
-			<div className="flex flex-col lg:flex-row justify-center">
+			<div className="flex flex-col gap-4 lg:flex-row justify-center">
 				<article className="max-w-[500px] mb-4">
 					<p className="mb-4">
 						Når jeg spiller til dit event, er det vigtigste for mig,
@@ -30,22 +31,8 @@ export default async function Musiknydelse({ className }) {
 						nye sætning og fremstår sammenhængende og professionel.
 					</p>
 				</article>
-				<div className="grid grid-cols-2 gap-4 max-w-[500px]">
-					<img
-						className="col-span-2"
-						src="https://picsum.photos/500/270"
-						alt=""
-					/>
-					<img
-						className=""
-						src="https://picsum.photos/245/150"
-						alt=""
-					/>
-					<img
-						className=""
-						src="https://picsum.photos/245/150"
-						alt=""
-					/>
+				<div className="max-w-[500px]">
+					<Image src={image} alt="image" />
 				</div>
 			</div>
 		</section>

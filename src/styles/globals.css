@@ -32,6 +32,9 @@
 	.button-secondary {
 		@apply text-center custom-focus border-4 border-blue-400 bg-transparent px-8 py-1 font-bold text-blue-400 hover:text-dark-400 hover:bg-blue-200 hover:border-blue-200 focus:border-blue-400  text-lg rounded-tl-2xl rounded-br-2xl transition-all active:bg-blue-500 active:border-blue-500 cursor-pointer;
 	}
+	.button-color-delete {
+		@apply bg-transparent border-utility-warning text-utility-warning hover:text-cream-50 hover:border-utility-warninghover hover:bg-utility-warninghover;
+	}
 
 	.card {
 		@apply column min-w-[20rem] items-center gap-8 rounded-2xl bg-cream-400 px-4 py-8 shadow-md sm:min-w-[24rem] sm:px-10;
