@@ -165,10 +165,10 @@ export default function customerForm() {
 					id="default-checkbox"
 					type="checkbox"
 					value=""
-					class="w-4 h-4 text-green-400 bg-dark-100 border-dark-100 rounded focus:ring-blue-500"
+					className="w-4 h-4 text-green-400 bg-dark-100 border-dark-100 rounded focus:ring-blue-500"
 					required
 				/>
-				<label for="default-checkbox" class="ms-2 label mb-0">
+				<label htmlFor="default-checkbox" class="ms-2 label mb-0">
 					Bekræft at jeg gerne må kontakte dig på den angivede mail på
 					det angivede telefonnummer *
 				</label>
