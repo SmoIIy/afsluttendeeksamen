@@ -17,13 +17,9 @@ export default async function Booking() {
 				<Opsætning className="lg:my-60 my-20" />
 				<section className="max-w-5xl mx-auto md:p-0 p-4 mb-40">
 					<div className="max-w-3xl mx-auto mb-8">
+						<span id="bookingformular" />
 						<h2 className="">Book her</h2>
-						<p className="text-xl text-cream-200">
-							Fortæl mig om dit event ved at udfylde formularen
-							herunder.
-						</p>
 					</div>
-					<span id="bookingformular" />
 					<Form />
 				</section>
 			</main>
