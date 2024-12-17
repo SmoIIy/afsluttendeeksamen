@@ -11,7 +11,7 @@ export default async function Booking() {
 		<div className="bg-[url('/bg_book.jpg')] bg-no-repeat bg-cover">
 			<main>
 				<Header />
-				<BookPer className="lg:mb-60 mb-20 mt-20" />
+				<BookPer className="lg:mb-60 mb-20 mt-10" />
 				<WhatHappends className="lg:my-60 my-20" />
 				<Inkluderet className="lg:my-60 my-20" />
 				<Opsætning className="lg:my-60 my-20" />

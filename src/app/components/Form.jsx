@@ -174,7 +174,7 @@ export default function customerForm() {
 				</label>
 			</div>
 			<input
-				className="button-primary md:col-span-2"
+				className="button-primary md:col-span-2 md:mx-52"
 				type="submit"
 				value="Send"
 			/>
