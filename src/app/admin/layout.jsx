@@ -9,6 +9,10 @@ import "src/styles/globals.css";
 // do not cache this layout
 export const revalidate = 0;
 
+export const metadata = {
+	title: "Admin",
+};
+
 export default async function AdminLayout({ children }) {
 	const supabase = createServerComponentClient({ cookies });
 

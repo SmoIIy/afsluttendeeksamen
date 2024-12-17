@@ -2,6 +2,11 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import image from "../../assets/kontakt-image.jpg";
+import Link from "next/link";
+
+export const metadata = {
+	title: "Kontakt",
+};
 
 export default async function Kontakt() {
 	return (
@@ -14,8 +19,16 @@ export default async function Kontakt() {
 					</h1>
 					<p className="">
 						Har du spørgsmål eller brug for mere information? Jeg er
-						klar til at hjælpe! Udfyld formularen herunder, eller
-						kontakt mig direkte - så vender jeg hurtigt tilbage.
+						klar til at hjælpe! Udfyld formularen på
+						<Link
+							className="relative group text-cream-200 decoration-green-400 hover:text-green-400 transition-colors"
+							href="/booking#bookingformular"
+						>
+							{" "}
+							bookingsiden
+						</Link>
+						, eller kontakt mig direkte - så vender jeg hurtigt
+						tilbage.
 					</p>
 					<div className="flex flex-col gap-10">
 						<div className="flex gap-8 items-center not-prose mb-4">

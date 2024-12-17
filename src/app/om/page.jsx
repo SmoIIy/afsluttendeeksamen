@@ -6,6 +6,11 @@ import Kommentarer from "../components/Kommentarer";
 import Udstyr from "../components/Udstyr";
 import Instagramfeed from "../components/Instagramfeed";
 import Spotify from "../components/Spotify";
+import Head from "next/head";
+
+export const metadata = {
+	title: "Om Per",
+};
 
 export default async function Om() {
 	return (

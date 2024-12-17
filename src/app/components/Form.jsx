@@ -50,7 +50,7 @@ export default function customerForm() {
 	const today = new Date().toISOString().split("T")[0];
 	if (submitted) {
 		return (
-			<div className="grid grid-cols-1 mx-auto max-w-3xl text-center text-green-500">
+			<div className="grid grid-cols-1 mx-auto max-w-3xl place-content-center text-center text-green-500 md:min-h-[800px]">
 				<h4>Tak for din besked! Du hører fra mig snarest!</h4>
 			</div>
 		);
