@@ -28,7 +28,7 @@ Vi har benyttet git og github til version control, da dette har tilladt os at ha
 
 ### Vercel
 
-Vi har benyttet Vercel til at hoste vores side, som et naturligt valg i forlængelse af vores valg af Next.js som vores full stack framework. Da Vercel er udviklet af de samme udviklere som Next.js, er Vercel specifikt designed til at strømline og optimere publicering af en Next.js app.
+Vi har benyttet Vercel til at hoste vores side, som et naturligt valg i forlængelse af vores valg af Next.js som vores full stack framework. Da Vercel er udviklet af de samme udviklere som Next.js, er Vercel specifikt designed til at strømline og optimere publicering af en Next.js app. Dette indkluderer et CDN (Content Delivery Network), automatisk skalering i tilfælde af spring i trafik samt analytics.
 
 ### Minor
 
