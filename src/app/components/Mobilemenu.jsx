@@ -53,7 +53,7 @@ const BurgerMenu = () => {
 
 			{/* Menu */}
 			<div
-				className={`absolute top-24 right-0 bg-dark-500 text-cream-50 w-full p-4 rounded shadow-lg transition-transform duration-300 ${
+				className={`absolute top-24 right-0 bg-dark-500 z-50 text-cream-50 w-full p-4 rounded shadow-lg transition-transform duration-300 ${
 					isOpen ? "scale-100" : " scale-0"
 				}`}
 			>

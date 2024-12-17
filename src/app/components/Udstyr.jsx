@@ -9,7 +9,7 @@ export default async function Udstyr({ className }) {
 		<section
 			className={cn(
 				className,
-				"mx-auto dark-bg px-4 md:px-32 py-16 lg:py-32",
+				"mx-auto dark-bg px-6 md:px-32 py-16 lg:py-32",
 			)}
 		>
 			<div className="flex flex-col lg:flex-row gap-16 justify-center">
