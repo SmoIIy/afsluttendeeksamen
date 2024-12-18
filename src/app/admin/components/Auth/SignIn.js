@@ -6,6 +6,7 @@ import cn from "classnames";
 import { Field, Form, Formik } from "formik";
 import Link from "next/link";
 import * as Yup from "yup";
+import Guide from "../Guide";
 
 const SignInSchema = Yup.object().shape({
 	email: Yup.string().email("Invalid email").required("Required"),
@@ -29,6 +30,8 @@ const SignIn = () => {
 
 	return (
 		<div className="card bg-dark-700 max-w-96 mx-auto mt-16">
+			<Guide body="Her skal du logge ind med email@email.com, samt koden 'admin'" />
+
 			<h2 className="text-cream-50 w-full text-center text-4xl mx-auto">
 				Log In
 			</h2>
