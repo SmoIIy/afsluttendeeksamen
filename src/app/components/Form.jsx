@@ -160,7 +160,7 @@ export default function customerForm() {
 					onInput={handleInputChange}
 				/>
 			</div>
-			<div class="flex items-center mb-4 md:col-span-2">
+			<div className="flex items-center mb-4 md:col-span-2">
 				<input
 					id="default-checkbox"
 					type="checkbox"
@@ -168,7 +168,7 @@ export default function customerForm() {
 					className="w-4 h-4 text-green-400 bg-dark-100 border-dark-100 rounded focus:ring-blue-500"
 					required
 				/>
-				<label htmlFor="default-checkbox" class="ms-2 label mb-0">
+				<label htmlFor="default-checkbox" className="ms-2 label mb-0">
 					Bekræft at jeg gerne må kontakte dig på den angivede mail på
 					det angivede telefonnummer *
 				</label>

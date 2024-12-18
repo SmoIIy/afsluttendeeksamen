@@ -1,20 +1,22 @@
-import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
-import { NextResponse } from 'next/server';
+import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
 
 export async function GET(request) {
-  const requestUrl = new URL(request.url);
-  const code = requestUrl.searchParams.get('code');
+	const requestUrl = new URL(request.url);
+	const code = requestUrl.searchParams.get("code");
 
-  if (code) {
-    const supabase = createRouteHandlerClient({ cookies });
-    await supabase.auth.exchangeCodeForSession(code);
+	if (code) {
+		const supabase = createRouteHandlerClient({ cookies });
+		await supabase.auth.exchangeCodeForSession(code);
 
-    return NextResponse.redirect(`${requestUrl.origin}/update-password`);
-  }
+		return NextResponse.redirect(
+			`${requestUrl.origin}/admin/update-password`,
+		);
+	}
 
-  // eslint-disable-next-line no-console
-  console.error('ERROR: Invalid auth code or no auth code found');
+	// eslint-disable-next-line no-console
+	console.error("ERROR: Invalid auth code or no auth code found");
 
-  return NextResponse.redirect(`${requestUrl.origin}/sign-in`);
+	return NextResponse.redirect(`${requestUrl.origin}/admin/sign-in`);
 }

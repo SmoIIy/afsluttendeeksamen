@@ -1,6 +1,10 @@
 import Image from "next/image";
 import cn from "classnames";
 import Button from "./Button";
+import instagram1 from "../../assets/insta1.png";
+import instagram2 from "../../assets/insta2.png";
+import instagram3 from "../../assets/insta3.png";
+import instagram4 from "../../assets/insta4.png";
 
 const images = [
 	"https://picsum.photos/id/237/400/500",
@@ -27,7 +31,11 @@ export default async function Instagramfeed({ className }) {
 				className="button-secondary mx-auto"
 			/>
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-				{images &&
+				<Image src={instagram1} alt="" />
+				<Image src={instagram2} alt="" />
+				<Image src={instagram3} alt="" />
+				<Image src={instagram4} alt="" />
+				{/* {images &&
 					images.map((url, index) => (
 						<Image
 							src={url}
@@ -36,7 +44,7 @@ export default async function Instagramfeed({ className }) {
 							height={500}
 							key={index}
 						/>
-					))}
+					))} */}
 			</div>
 		</section>
 	);

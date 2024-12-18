@@ -13,7 +13,7 @@
 		@apply md:text-[96px] text-[48px] leading-tight font-syne font-bold text-cream-400;
 	}
 	h2 {
-		@apply md:text-[96px] text-[36px] font-syne font-bold text-cream-50;
+		@apply md:text-[96px] text-[36px] font-syne font-bold text-cream-50 leading-tight;
 	}
 	h3 {
 		@apply md:text-[64px] text-[32px]  font-syne font-bold text-blue-400 leading-tight;
