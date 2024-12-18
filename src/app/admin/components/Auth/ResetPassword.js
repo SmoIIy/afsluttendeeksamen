@@ -20,7 +20,7 @@ const ResetPassword = () => {
 		const { error } = await supabase.auth.resetPasswordForEmail(
 			formData.email,
 			{
-				redirectTo: `${window.location.origin}/auth/update-password`,
+				redirectTo: `${window.location.origin}/admin/auth/update-password`,
 			},
 		);
 
@@ -73,7 +73,7 @@ const ResetPassword = () => {
 				</div>
 			)}
 			{successMsg && (
-				<div className="text-dark-800 text-center">{successMsg}</div>
+				<div className="text-cream-400 text-center">{successMsg}</div>
 			)}
 			<Link href="/admin/sign-in" className="link">
 				Tilbage til login
