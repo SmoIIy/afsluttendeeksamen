@@ -8,9 +8,9 @@ export default async function BookPer({ className }) {
 			<div className="flex flex-col lg:flex-row justify-center gap-20">
 				<div className="max-w-[490px] flex flex-col gap-4">
 					<h4 className=" text-cream-300">
-						Book nemt DJ Per til din ønskede arangement.{" "}
+						Book nemt DJ Per til dit ønskede arangement.{" "}
 					</h4>
-					<p>
+					<p className="max-w-[421px]">
 						Sammen kan vi få gang i festen og skabe den helt rette
 						atmosfære. Uanset om det er et bryllup, en firmafest
 						eller en privat fest, er vi klar til at skræddersy

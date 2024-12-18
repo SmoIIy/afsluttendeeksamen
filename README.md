@@ -16,7 +16,7 @@ Fokus på udvikleroplevelsen, var også grunden til at vi ikke valgte en CMS som
 
 ### Tailwind CSS
 
-I forlængelsen af temaet med god Developer Experience, har vi valgt at gå med TailwindCSS for styling. Dette er for den hurtige udviklingstid, og gode opkobling med komponent baseret udvikling. Den gode performance er også en bonus, og bestemt en del af valget.
+I forlængelsen af temaet med god Developer Experience, har vi valgt at gå med TailwindCSS for styling. Dette er for den hurtige udviklingstid, og gode opkobling med komponent baseret udvikling. Den gode performance er også en bonus, og bestemt en del af valget. Tailwind hjælper også med at tilpasse til forskellige browsers automatisk.
 
 ### Supabase
 

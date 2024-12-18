@@ -17,7 +17,7 @@ export default async function Udstyr({ className }) {
 					<h3 className="text-cream-400 mb-4">
 						Udstyr i bedste kvalitet
 					</h3>
-					<p className="mb-4">
+					<p className="mb-4 max-w-[460px]">
 						For mig er det vigtigt, at både musikken og lyden sidder
 						lige i skabet. Derfor bruger jeg kun professionelt
 						udstyr af højeste kvalitet. Jeg medbringer alt, hvad der
@@ -25,7 +25,7 @@ export default async function Udstyr({ className }) {
 						imellem. Jeg sørger for, at alt er opsat og fungerer som
 						det skal.
 					</p>
-					<p>
+					<p className=" max-w-[460px]">
 						Så kan du roligt læne dig tilbage, være til stede i
 						øjeblikket og nyde festen, mens jeg tager mig af
 						teknikken.
@@ -33,18 +33,13 @@ export default async function Udstyr({ className }) {
 				</article>
 				<div className="grid grid-cols-2 gap-4 max-w-[500px]">
 					<Image
-						className="col-span-2"
-						src={udstyr1}
+						className="col-span-2 rounded-tl-[40px] max-h-80 object-cover"
+						src={udstyr3}
 						alt="billede af dj pult"
 					/>
 					<Image
-						className="aspect-square object-cover"
-						src={udstyr2}
-						alt="billede af dj per"
-					/>
-					<Image
-						className="aspect-square object-cover"
-						src={udstyr3}
+						className="col-span-2 rounded-br-[40px] "
+						src={udstyr1}
 						alt="billede af dj pult"
 					/>
 				</div>

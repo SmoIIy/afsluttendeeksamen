@@ -28,7 +28,7 @@ export default function Header() {
 					<span className="hover-underline" />
 				</Link>
 				<Button
-					anchor="/booking#bookingformular"
+					anchor="/booking"
 					body="Booking"
 					className="button-primary ml-auto"
 				/>

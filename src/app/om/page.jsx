@@ -6,7 +6,6 @@ import Kommentarer from "../components/Kommentarer";
 import Udstyr from "../components/Udstyr";
 import Instagramfeed from "../components/Instagramfeed";
 import Spotify from "../components/Spotify";
-import Head from "next/head";
 
 export const metadata = {
 	title: "Om Per",
@@ -17,7 +16,7 @@ export default async function Om() {
 		<div className="min-h-screen bg-[url('/bg_om.webp')] bg-no-repeat bg-cover">
 			<Header />
 			<main>
-				<Hvemerper className="mb-20" />
+				<Hvemerper className="mb-20 lg:mt-20" />
 				<Musiknydelse className="lg:my-60 my-20" />
 				<Udstyr className="lg:my-60 my-20" />
 				<Kommentarer className="lg:my-60 my-20" />
