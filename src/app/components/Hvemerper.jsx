@@ -4,7 +4,7 @@ import perportræt from "../../assets/perportræt.jpg";
 
 export default async function Hvemerper({ className }) {
 	return (
-		<section className={cn(className, "max-w-6xl mx-auto p-4 lg:p-0")}>
+		<section className={cn(className, "max-w-6xl mx-auto p-6 lg:p-0")}>
 			<h1 className="mb-4">Hvem er DJ Per?</h1>
 			<p className="mb-4 max-w-prose">
 				Jeg er DJ Per, og jeg brænder for at skabe øjeblikke, hvor

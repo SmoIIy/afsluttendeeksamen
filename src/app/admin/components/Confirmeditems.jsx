@@ -2,14 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "src/app/utils/supabase/settings";
-import NewDate from "./Newdate";
+import { formatDate } from "src/app/utils/actions/formatdate";
+import Confirmeddate from "./Confirmeddate";
 
 const ItemList = () => {
 	const [items, setItems] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const { data, error } = await supabase.from("deleted").select("*");
+			const { data, error } = await supabase
+				.from("confirmed")
+				.select("*");
 			if (error) console.error(error);
 			else setItems(data);
 		};
@@ -18,10 +21,10 @@ const ItemList = () => {
 
 		// Set up real-time subscription
 		const subscription = supabase
-			.channel("public:deleted")
+			.channel("public:confirmed")
 			.on(
 				"postgres_changes",
-				{ event: "*", schema: "public", table: "deleted" },
+				{ event: "*", schema: "public", table: "confirmed" },
 				(payload) => {
 					if (payload.eventType === "INSERT") {
 						setItems((prevItems) => [...prevItems, payload.new]);
@@ -54,7 +57,15 @@ const ItemList = () => {
 			</h2>
 			<div className="flex gap-4 max-w-7xl flex-wrap">
 				{items &&
-					items.map((item) => <NewDate data={item} key={item.id} />)}
+					items.map((item) => {
+						const formattedItem = {
+							...item,
+							date: formatDate(item.date),
+						};
+						return (
+							<Confirmeddate data={formattedItem} key={item.id} />
+						);
+					})}
 			</div>
 		</div>
 	);

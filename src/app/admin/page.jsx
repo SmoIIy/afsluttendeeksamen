@@ -8,10 +8,6 @@ import grapItems from "../utils/actions/grabitems";
 import Newitems from "./components/Newitems";
 import Confirmeditems from "./components/Confirmeditems";
 
-export const metadata = {
-	title: "Admin",
-};
-
 export default async function Profile() {
 	const supabase = createServerComponentClient({ cookies });
 
@@ -30,8 +26,8 @@ export default async function Profile() {
 	return (
 		<div>
 			<header className="w-full relative top-0 bg-dark-800 p-4 flex mx-auto justify-between items-center">
-				<img src="logo.svg" alt="" />
-				<h1 className="text-3xl">Admin</h1>
+				<img src="logo.svg" alt="" className="max-w-8 md:max-w-96" />
+				<h1 className="text-base md:text-3xl">Admin</h1>
 
 				<SignOut />
 			</header>

@@ -19,7 +19,7 @@ export default async function Booking() {
 				<WhatHappends className="lg:my-60 my-20" />
 				<Inkluderet className="lg:my-60 my-20" />
 				<Opsætning className="lg:my-60 my-20" />
-				<section className="max-w-5xl mx-auto md:p-0 p-4 mb-24">
+				<section className="max-w-5xl mx-auto md:p-0 p-6 mb-24">
 					<div className="max-w-3xl mx-auto mb-8">
 						<span id="bookingformular" />
 						<h2 className="">Book her</h2>

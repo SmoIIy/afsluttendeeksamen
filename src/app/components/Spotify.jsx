@@ -5,7 +5,7 @@ export default async function Spotify({ className }) {
 		<section
 			className={cn(
 				className,
-				"dark-bg mx-auto px-4 md:px-32 py-16 lg:py-32 gap-20 grid grid-cols-1 lg:grid-cols-2",
+				"dark-bg mx-auto px-6 md:px-32 py-16 lg:py-32 gap-20 grid grid-cols-1 lg:grid-cols-2",
 			)}
 		>
 			<div>

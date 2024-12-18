@@ -7,7 +7,7 @@ export default async function Musiknydelse({ className }) {
 		<section
 			className={cn(
 				className,
-				"mx-auto dark-bg px-4 md:px-32 py-16 lg:py-32",
+				"mx-auto dark-bg px-6 md:px-32 py-16 lg:py-32",
 			)}
 		>
 			<h3 className="text-cream-400 text-center mb-4">
