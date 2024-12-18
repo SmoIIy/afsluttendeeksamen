@@ -30,7 +30,7 @@ const UpdatePassword = () => {
 	}
 
 	return (
-		<div className="card bg-dark-700">
+		<div className="card bg-dark-700 max-w-96 mx-auto mt-16">
 			<h2 className="w-full text-center text-3xl">Update Password</h2>
 			<Formik
 				initialValues={{
@@ -41,7 +41,9 @@ const UpdatePassword = () => {
 			>
 				{({ errors, touched }) => (
 					<Form className="column w-full">
-						<label htmlFor="email">New Password</label>
+						<label htmlFor="email" className="label">
+							New Password
+						</label>
 						<Field
 							className={cn(
 								"input",
@@ -58,10 +60,7 @@ const UpdatePassword = () => {
 								{errors.password}
 							</div>
 						) : null}
-						<button
-							className="button-secondary w-full"
-							type="submit"
-						>
+						<button className="button-primary w-full" type="submit">
 							Update Password
 						</button>
 					</Form>

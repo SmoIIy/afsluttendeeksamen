@@ -1,5 +1,5 @@
-import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
-import { NextResponse } from 'next/server';
+import { createMiddlewareClient } from "@supabase/auth-helpers-nextjs";
+import { NextResponse } from "next/server";
 
 /**
  * Any Server Component route that uses a Supabase client must be added to this
@@ -7,12 +7,12 @@ import { NextResponse } from 'next/server';
  * request to Supabase with an expired `access_token`.
  */
 export async function middleware(req) {
-  const res = NextResponse.next();
-  const supabase = createMiddlewareClient({ req, res });
-  await supabase.auth.getSession();
-  return res;
+	const res = NextResponse.next();
+	const supabase = createMiddlewareClient({ req, res });
+	await supabase.auth.getSession();
+	return res;
 }
 
 export const config = {
-  matcher: ['/', '/profile'],
+	matcher: ["/", "/profile", "/admin"],
 };

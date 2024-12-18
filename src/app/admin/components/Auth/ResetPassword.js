@@ -58,10 +58,7 @@ const ResetPassword = () => {
 								{errors.email}
 							</div>
 						) : null}
-						<button
-							className="button-secondary w-full"
-							type="submit"
-						>
+						<button className="button-primary w-full" type="submit">
 							Send Instrukser
 						</button>
 					</Form>
