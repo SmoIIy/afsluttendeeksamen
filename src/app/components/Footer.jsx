@@ -21,7 +21,7 @@ export default async function Footer() {
 					</li>
 					<li>
 						<Link className="relative group" href="/om">
-							Om
+							Om Per
 							<span className="hover-underline" />
 						</Link>
 					</li>
