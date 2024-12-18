@@ -37,7 +37,7 @@ export default async function Kontakt() {
 								alt=""
 								className="inline mr-1 w-8"
 							/>
-							<p>mail@mail.com</p>
+							<p>djpartyper@gmail.com</p>
 						</div>
 						<div className="flex gap-8 items-center not-prose mb-4">
 							<img
@@ -53,7 +53,7 @@ export default async function Kontakt() {
 								alt=""
 								className="inline mr-1 w-7"
 							/>
-							<p>Adresse</p>
+							<p>Hundested</p>
 						</div>
 					</div>
 				</article>

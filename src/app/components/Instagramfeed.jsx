@@ -25,27 +25,18 @@ export default async function Instagramfeed({ className }) {
 				"max-w-6xl mx-auto flex flex-col gap-4 p-4",
 			)}
 		>
+			<h3 className="text-center">Følg med i hvad jeg laver</h3>
+			<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+				<Image src={instagram1} alt="billede af per" />
+				<Image src={instagram2} alt="billede af per" />
+				<Image src={instagram3} alt="billede af per" />
+				<Image src={instagram4} alt="billede af per" />
+			</div>
 			<Button
 				anchor="instagram.com"
 				body="Følg mig på instagram"
 				className="button-secondary mx-auto"
 			/>
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-				<Image src={instagram1} alt="" />
-				<Image src={instagram2} alt="" />
-				<Image src={instagram3} alt="" />
-				<Image src={instagram4} alt="" />
-				{/* {images &&
-					images.map((url, index) => (
-						<Image
-							src={url}
-							alt="pic"
-							width={400}
-							height={500}
-							key={index}
-						/>
-					))} */}
-			</div>
 		</section>
 	);
 }

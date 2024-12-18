@@ -9,9 +9,7 @@ export default async function Opsætning({ className }) {
 				"dark-bg mx-auto px-6 md:px-32 py-16 lg:py-32",
 			)}
 		>
-			<h3 className="text-center text-purple-400 mb-4">
-				Opsætning af udstyr
-			</h3>
+			<h3 className="text-center  mb-4">Opsætning af udstyr</h3>
 			<div className="flex flex-col md:flex-row md:gap-20">
 				<Image src={udstyr} alt="Udstyr" />
 				<article className="flex flex-col gap-4 mt-4 md:mt-0 md:min-w-[445px]">
