@@ -27,7 +27,7 @@ const ResetPassword = () => {
 		if (error) {
 			setErrorMsg(error.message);
 		} else {
-			setSuccessMsg("Password reset instructions sent.");
+			setSuccessMsg("Password reset instrukser sendt til email");
 		}
 	}
 
