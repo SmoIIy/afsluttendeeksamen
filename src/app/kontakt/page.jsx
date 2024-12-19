@@ -10,7 +10,7 @@ export const metadata = {
 
 export default async function Kontakt() {
 	return (
-		<div className="w-full min-h-screen bg-dark-400 bg-[url('/bg_kontakt.jpg')]  bg-no-repeat bg-cover">
+		<div className="w-full min-h-screen bg-dark-400 bg-[url('/bg_kontakt_ny.jpg')]  bg-no-repeat bg-cover">
 			<Header />
 			<main className="justify-center flex flex-col lg:flex-row p-6 md:p-0 items-center gap-12">
 				<article className="prose text-cream-200 max-w-lg">
