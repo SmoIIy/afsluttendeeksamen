@@ -106,10 +106,43 @@ Hver Date komponent kommer med en knap, som åbner en modal. På nye henvendelse
 
 > Vedlæg billede af denne funktion
 
-#### Kode eksempel og painpoints
-
-Skriv om hvordan jeg har håndteret datoformatet
-
 ##### Instagram
 
 Vi ville gerne have oprettet en forbindelse til DJ Pers instagram og have renderet den på siden, men desværre fjernede Meta den API vi skulle bruge, den 4. december. Derfor er dette harcoded med 4 billeder i et grid.
+
+### SEO
+
+I forhold til SEO, har vi forsøgt at opfylde følgende for at opnå en god SEO score:
+
+-   Indsætte keywords i en beskrivende meta description
+-   Benytte H1, H2, H3 tags til at strukturere vores indhold korrekt
+-   Indkludere Alt text for billeder
+-   Forsøgt at optimere sidens hastighed så vidt muligt
+-   Sørge for at siden er responsiv og funktionel på devices af forskellige størrelser
+-   Benytte en hosting platform som automatisk bruger HTTPS for at sikre siden
+
+### Lighthouse tests
+
+Vi har lavet lighthouse tests, for at sikre os at vores side opretholder de standarder, som vi har sigtet efter. Og her har det vist sig at vores valg med en fuld stack serverside rendering løsning har givet pote, da vores hastighed ser god ud. Det samme er tilfældet med vores semantiske setup, best practices og SEO. Den eneste undtagelse på dette er på vores /om side - og dette er foresaget af vores frame med spotifyplaylisten. Vi har dog vurderet at dens effekt opvejede for en lidt lavere lighthouse score.
+
+### Heuristisk Test
+
+For test af hjemmesiden, har vi benyttet os af heuristiske tests. Det har foregået ved, at vi har sendt siden, sammen med få spørgsmål, til en kvalificeret person har ville hjælpe. Spørgsmålene gik ud på checke efter funktionelle eller UX fejl som der end måtte være.
+
+Et eksempel på dette var med Caroline. Fuldtids UX designer og frontend udvikler, samt tidligere elev på KEA. Hun blev spurgt ind til UX, specielt i forhold til navigation og flowet med formen, og pointerede et par fejl med overflødige punkter i menuen, samt et element der forblev synligt, selvom det ikke gav mening at det var der
+
+> Indsæt billede af samtale
+
+### AI Brug
+
+Til udvikling er AI brugt til to ting: At spørge hvordan man gjorde specifikke ting i Next.js hvis dokumentationen på deres hjemmeside var for kompleks, eller til hjælp med funktioner som var svære at finde ud af. Eksempler:
+
+> "How can i create a title that updates based on what page you are on in a next.js app?"
+
+> "How do i make this loop include the formatDate() function with each iteration?"
+
+{items &&
+items.map((item) => (
+item.date = formatDate(item.date);
+<Confirmeddate data={item} key={item.id} />
+))}
