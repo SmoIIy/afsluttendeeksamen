@@ -30,7 +30,7 @@ const SignIn = () => {
 
 	return (
 		<div className="card bg-dark-700 max-w-96 mx-auto mt-16">
-			<Guide body="Her skal du logge ind med djpartyperl@gmail.com" />
+			<Guide body="Her skal du logge ind med djpartyper@gmail.com og kodeord: 'partytime19'" />
 
 			<h2 className="text-cream-50 w-full text-center text-4xl mx-auto">
 				Log In
