@@ -24,6 +24,10 @@ Supabase er valgt til vores database, da vi allerede havde ekstensiv erfaring me
 
 Vi har benyttet git og github til version control, da dette har tilladt os at have kontrol over og adgang til alle tidligere version af projektet, og være sikret backups, hvis noget skulle gå galt i en specifik version. Det har også gjort det nemt at deploye til live siden, da vercel automatisk henter det nyeste commit, og deployer det til siden.
 
+#### Git strategi
+
+Vores git strategi har været simpel. Vi har haft en person som primært har udviklet siden, og derfor mest har arbejdet i main. Hvis andre gruppemedlemmer skulle tilføje til siden, har de oprettet deres egen branch, og merget indholdet ind når det var klart.
+
 ### Vercel
 
 Vi har benyttet Vercel til at hoste vores side, som et naturligt valg i forlængelse af vores valg af Next.js som vores full stack framework. Da Vercel er udviklet af de samme udviklere som Next.js, er Vercel specifikt designed til at strømline og optimere publicering af en Next.js app. Dette indkluderer et CDN (Content Delivery Network), automatisk skalering i tilfælde af spring i trafik samt analytics.

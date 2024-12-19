@@ -17,6 +17,7 @@ export default async function Spotify({ className }) {
 					allowFullScreen=""
 					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 					loading="lazy"
+					title="Spotify playlist"
 				/>
 			</div>
 			<div className="order-first lg:order-2">
