@@ -42,7 +42,6 @@ export default function customerForm() {
 		if (form.checkValidity()) {
 			const formData = new FormData(form);
 			const serializedData = Object.fromEntries(formData.entries());
-			console.log(serializedData);
 			handleForm(serializedData);
 			setSubmitted(true);
 		}

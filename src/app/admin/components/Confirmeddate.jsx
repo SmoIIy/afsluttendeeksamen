@@ -10,16 +10,16 @@ export default function NewDate({ data }) {
 	const openModal = () => {
 		setIsOpen((prevState) => !prevState);
 	};
-
+	// Reset the action after execution
 	const handleConfirm = async () => {
 		if (confirmAction) {
 			await confirmAction();
 		}
-		setConfirmAction(null); // Reset the action after execution
+		setConfirmAction(null);
 	};
-
+	// Cancel confirmation
 	const cancelConfirm = () => {
-		setConfirmAction(null); // Cancel confirmation
+		setConfirmAction(null);
 	};
 
 	return (
@@ -104,7 +104,4 @@ async function deleteItem(dateId) {
 		.from("confirmed")
 		.delete()
 		.eq("id", dateId);
-	if (error) {
-		console.log(error);
-	}
 }

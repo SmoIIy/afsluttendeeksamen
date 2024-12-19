@@ -18,10 +18,6 @@ export default async function Profile() {
 	if (!user) {
 		redirect("/admin/sign-in");
 	}
-	const newItems = await grapItems("test");
-	const confirmedItems = await grapItems("deleted");
-	console.log("Nye items er:  ", newItems);
-	console.log("Confirmed items er: ", confirmedItems);
 
 	return (
 		<div>

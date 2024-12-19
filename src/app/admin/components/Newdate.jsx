@@ -6,22 +6,22 @@ import { formatDateBack } from "src/app/utils/actions/formatdate";
 
 export default function NewDate({ data }) {
 	const [isOpen, setIsOpen] = useState(false);
-	const [confirmAction, setConfirmAction] = useState(null); // State for confirmation action
+	const [confirmAction, setConfirmAction] = useState(null);
 
 	const openModal = () => {
 		setIsOpen((prevState) => !prevState);
 	};
-
+	// Reset the action after execution
 	const handleConfirm = async () => {
 		if (confirmAction) {
 			await confirmAction();
 		}
-		setConfirmAction(null); // Reset the action after execution
+		setConfirmAction(null);
 	};
-
+	// Cancel confirmation
 	const cancelConfirm = () => {
 		setIsOpen(false);
-		setConfirmAction(null); // Cancel confirmation
+		setConfirmAction(null);
 	};
 
 	return (
@@ -86,7 +86,6 @@ export default function NewDate({ data }) {
 				</div>
 			)}
 
-			{/* Confirmation Modal */}
 			{confirmAction && (
 				<div className="fixed inset-0 flex items-center justify-center bg-dark-500 bg-opacity-50">
 					<div className="bg-cream-50 p-4 rounded-lg shadow-lg text-center ">
@@ -113,10 +112,8 @@ export default function NewDate({ data }) {
 }
 
 async function moveItem(date, dateId) {
-	// Format date.date
 	if (date.date) {
 		try {
-			console.log("date er ", typeof date.date);
 			date.date = formatDateBack(date.date);
 		} catch (error) {
 			console.error(error.message);
@@ -130,22 +127,10 @@ async function moveItem(date, dateId) {
 		.from("confirmed")
 		.insert(date)
 		.select();
-	if (data) {
-		console.log("inserted ", data);
-	}
-	if (insertError) {
-		console.log("Error with insert: ", insertError);
-	}
 
 	const { error } = await supabase.from("new").delete().eq("id", dateId);
-	if (error) {
-		console.log(error);
-	}
 }
 
 async function deleteItem(dateId) {
 	const { error } = await supabase.from("new").delete().eq("id", dateId);
-	if (error) {
-		console.log(error);
-	}
 }
