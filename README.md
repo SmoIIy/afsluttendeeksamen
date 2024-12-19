@@ -2,8 +2,6 @@
 
 ## Tech Stack
 
-Skriv om hvorfor ej wordpress
-
 ---
 
 ### React + Next.js
@@ -20,7 +18,7 @@ I forlængelsen af temaet med god Developer Experience, har vi valgt at gå med 
 
 ### Supabase
 
-Supabase er valgt til vores database, da vi allerede havde ekstensiv erfaring med det - og det er super nemt at bruge. Den gode API og SDK gør det både hurtigt og nemt at bruge. Derudover gjorde det indbyggede authentication setup nemt at bruge en funktion vi ikke havde meget erfaring med på forhånd.
+Supabase er valgt til vores database, da vi allerede havde ekstensiv erfaring med det - og det er super nemt at bruge. Den gode API og SDK gør det både hurtigt og nemt at bruge.Vi opbevarer indkommende henvendelser fra bookingformen, og henter Derudover gjorde det indbyggede authentication setup nemt at bruge en funktion, som vi ikke havde meget erfaring med på forhånd.
 
 ### Git og Github
 
@@ -34,12 +32,46 @@ Vi har benyttet Vercel til at hoste vores side, som et naturligt valg i forlæng
 
 Vi har også benyttet nogle mindre libraries til små utilities, som vi har benyttet igennem vores projekt.
 
-### Admin
+#### Classnames
 
-https://github.com/SmoIIy/nextjs-supabase-auth
+Mindre javascript library, brugt til at kombinere classnames på komponenter
 
 #### Formik
 
+Et open source form library til React
+
 #### Yup
 
-#### Classnames
+Javascript validation schema builder til validering af forms
+
+---
+
+## Udvikling
+
+### Komponenter og blokke
+
+Skriv noget om hvordan vi har udviklet i en kombination af genbrugelige kombonenter og blokke
+
+### Styling
+
+Skriv noget om at benytte komponenter i sig selv til at style størrelse, farve, former osv, og at benytte props + classnames til at inputte margins
+
+#### @apply directive
+
+Skriv noget om hvordan vi har benyttet @apply directives til at sætte designsystemet op og genbruge styles for ikke at fylde hver enkelt komponent op
+
+### Funktioner
+
+Skriv noget om at opdele concerns i admin og root
+
+#### Form og validering
+
+Skriv om hvordan formen fungerer og hvordan validering fungerer
+
+### Admin
+
+Skriv om hvordan jeg har lavet admin ved hjælp af https://github.com/SmoIIy/nextjs-supabase-auth
+
+#### Kode eksempel og painpoint
+
+Skriv om hvordan jeg har håndteret datoformatet
