@@ -9,7 +9,9 @@ export default async function BookPer({ className }) {
 				"max-w-5xl mx-auto bg-dark-400 md:bg-transparent",
 			)}
 		>
-			<h1 className="p-6 lg:p-0">Sådan booker du DJPer</h1>
+			<h1 className="p-6 lg:p-0 lg:mb-8 lg:leading-none">
+				Sådan booker du DJPer
+			</h1>
 			<div className="bg-dark-400 p-6 py-10 md:rounded-br-[30px] md:rounded-tl-[30px]">
 				<div className="flex flex-col lg:flex-row justify-center gap-20 ">
 					<div className="max-w-[413px] flex flex-col gap-4">

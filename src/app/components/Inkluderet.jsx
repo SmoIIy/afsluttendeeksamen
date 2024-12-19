@@ -5,7 +5,7 @@ import kuffert from "../../assets/kuffert.jpg";
 export default async function Indkluderet({ className }) {
 	return (
 		<section className={cn(className, "max-w-6xl mx-auto p-6 md:p-0")}>
-			<h3 className="text-cream-400 md:text-6xl mb-8 text-center">
+			<h3 className="text-cream-400 md:text-6xl mb-9 text-center">
 				Hvad er inkluderet i din DJ-booking?
 			</h3>
 			<div className="flex flex-col md:flex-row gap-14">
@@ -20,7 +20,7 @@ export default async function Indkluderet({ className }) {
 						efter dine ønsker. Så du kan fokusere på at nyde din
 						fest uden bekymringer.
 					</p>
-					<h4 className="mb-5 text-3xl md:text-4xl">
+					<h4 className="mb-5 text-3xl lg:mt-8 md:text-4xl">
 						Her er oversigt over mit udstyr:
 					</h4>
 					<ul className="list-disc ml-4">
@@ -34,7 +34,11 @@ export default async function Indkluderet({ className }) {
 						<li>Eventuelt backup-udstyr</li>
 					</ul>
 				</article>
-				<Image src={kuffert} alt="billede af mand med kuffert"></Image>
+				<Image
+					className="lg:mt-4"
+					src={kuffert}
+					alt="billede af mand med kuffert"
+				></Image>
 			</div>
 		</section>
 	);

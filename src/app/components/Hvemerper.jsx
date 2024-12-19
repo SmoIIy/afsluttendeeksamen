@@ -11,7 +11,9 @@ export default async function Hvemerper({ className }) {
 			)}
 		>
 			<div className="max-w-[467px]">
-				<h1 className="mb-4 mt-10">Hvem er DJ Per?</h1>
+				<h1 className="mb-4 lg:mb-7 mt-10 lg:leading-none">
+					Hvem er DJ Per?
+				</h1>
 				<p className="mb-4 max-w-prose">
 					Jeg er DJ Per, og jeg brænder for at skabe øjeblikke, hvor
 					dansegulvet er fyldt, og stemningen er helt i top. Med en

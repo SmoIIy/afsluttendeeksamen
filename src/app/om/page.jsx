@@ -16,7 +16,7 @@ export default async function Om() {
 		<div className="min-h-screen bg-[url('/bg_om.webp')] bg-no-repeat bg-cover">
 			<Header />
 			<main>
-				<Hvemerper className="mb-20 lg:mt-20" />
+				<Hvemerper className="mb-20 lg:mt-16" />
 				<Musiknydelse className="lg:my-60 my-20" />
 				<Udstyr className="lg:my-60 my-20" />
 				<Kommentarer className="lg:my-60 my-20" />

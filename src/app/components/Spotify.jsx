@@ -20,7 +20,9 @@ export default async function Spotify({ className }) {
 				/>
 			</div>
 			<div className="order-first lg:order-2">
-				<h3 className="text-cream-400">Hør mine festfavoritter</h3>
+				<h3 className="text-cream-400 lg:my-7 mb-4 lg:leading-none">
+					Hør mine festfavoritter
+				</h3>
 				<p>
 					Lyt til min Spotify-playliste og få et indblik i de sange,
 					der sætter gang i dansegulvet. Perfekt som forsmag på din

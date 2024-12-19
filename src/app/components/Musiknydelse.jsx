@@ -7,7 +7,7 @@ export default async function Musiknydelse({ className }) {
 		<section
 			className={cn(
 				className,
-				"mx-auto dark-bg px-6 md:px-32 py-16 lg:py-32",
+				"mx-auto dark-bg px-6 md:px-32 py-16 lg:py-32 ",
 			)}
 		>
 			<div className="flex flex-col gap-4 lg:gap-16 lg:flex-row justify-center items-center">
@@ -18,7 +18,9 @@ export default async function Musiknydelse({ className }) {
 				/>
 
 				<article className="max-w-[500px] mb-4">
-					<h3 className="text-cream-400 mb-4">Musik alle kan nyde</h3>
+					<h3 className="text-cream-400 mb-4 mt-3 lg:mb-7 lg:leading-none">
+						Musik alle kan nyde
+					</h3>
 					<p className="mb-4">
 						Når jeg spiller til dit event, er det vigtigste for mig,
 						at musikken passer til dig og dine gæster. Sammen finder

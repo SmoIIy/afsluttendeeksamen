@@ -14,7 +14,7 @@ export default async function Udstyr({ className }) {
 		>
 			<div className="flex flex-col lg:flex-row gap-16 justify-center">
 				<article className="max-w-[533px] mb-4">
-					<h3 className="text-cream-400 mb-4">
+					<h3 className="text-cream-400 mb-4 lg:my-7 lg:leading-none">
 						Udstyr i bedste kvalitet
 					</h3>
 					<p className="mb-4 max-w-[460px]">
